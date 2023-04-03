@@ -14,3 +14,21 @@ https://ralph-ng.readthedocs.io/en/stable/installation/installation/
 - Hard Disk 30GB
 
 ### Instalación
+
+```shell
+curl -sL https://packagecloud.io/allegro/ralph/gpgkey | sudo apt-key add -
+```
+
+```shell
+sudo sh -c "echo 'deb https://packagecloud.io/allegro/ralph/ubuntu/ bionic main' >  /etc/apt/sources.list.d/ralph.list"
+```
+
+```shell
+sudo apt-get update
+```
+
+```shell
+sudo apt-get install mysql-server nginx ralph-core
+```
+
+<kbd>![image](https://user-images.githubusercontent.com/20743678/229489799-cd2f57b6-a220-41fc-9bc4-0c76d059468f.png)</kbd>
