@@ -49,3 +49,9 @@ sudo apt-get install ralph-core
 ```
 
 <kbd>![image](https://user-images.githubusercontent.com/20743678/229491191-587cd527-7527-4da3-9cf5-44226074af34.png)</kbd>
+
+### Conclusiones finales
+
+A partir de este momento pide tener instalado el paquete "libmysqlclient20", que está deprecated y ya puede instalarse en Ubuntu 22.04. Podríamos hacer un downgrade, peo nuestro sistema dejaría de ser seguro, por lo que abandonamos su despliegue. Probaré con CMDB o el propio Ralph con Docker.
+
+<kbd>![image](https://user-images.githubusercontent.com/20743678/229492966-5264b8f2-5550-4977-9e0c-39e3aebfac69.png)</kbd>
