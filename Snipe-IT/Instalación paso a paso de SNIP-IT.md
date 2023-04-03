@@ -32,5 +32,11 @@ ls -la
 
 ![image](https://user-images.githubusercontent.com/20743678/229479387-2e8d857b-0e49-4378-a3ab-1769ae1e468a.png)
 
+![image](https://user-images.githubusercontent.com/20743678/229479839-6aafc7a8-9c42-42ab-b87e-ffe003824a81.png)
+
+![image](https://user-images.githubusercontent.com/20743678/229479992-ef2ce713-bc1f-43e9-bd85-38249b4450da.png)
+
+![image](https://user-images.githubusercontent.com/20743678/229481341-64267e7d-1dbb-4192-939f-f1156b15e630.png)
+
 
 
