@@ -11,4 +11,4 @@
 * 009 - ThePhish-Installation
 * 010 - ZABBIX-6.2-Install-Guide-Ubuntu-20.04
 * 011 - osTicket-Installation-Guide
-* 012 - Grafana Ubuntu 22.04
+* 012 - Grafana Ubuntu 22.04 Azure LogINs Map
