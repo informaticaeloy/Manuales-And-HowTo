@@ -18,3 +18,12 @@ sudo apt-get update
 ```shell
 sudo apt-get upgrade
 ```
+
+```shell
+sudo apt-get install -y libapache-dbi-perl libapache2-mod-perl2 libarchive-zip-perl libdbd-mysql-perl libmojolicious-perl libnet-ip-perl libplack-perl libswitch-perl libxml-simple-perl make
+```
+
+<kbd>![image](https://user-images.githubusercontent.com/20743678/230025991-83c7fa80-4687-4896-ab5c-da9088e0c8f0.png)</kbd>
+
+<kbd>![image](https://user-images.githubusercontent.com/20743678/230026162-e93fb55e-6a63-45f1-896f-4ff393efd980.png)</kbd>
+
