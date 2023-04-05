@@ -4,12 +4,17 @@
 
 ### Referencias
 
-https://snipeitapp.com/
+https://ocsinventory-ng.org/?lang=en
+https://ocsinventory-ng.org/?page_id=1548&lang=en
 
-<kbd>![image](https://user-images.githubusercontent.com/20743678/229484611-49c17a04-42b7-4bf9-91c3-611e4c2090f4.png)</kbd>
+<kbd>![image](https://user-images.githubusercontent.com/20743678/230025479-f4bc5a06-60d2-4eaf-83bd-41bf48c00cd9.png)</kbd>
 
 ### Installing
 
 ```shell
-wget https://raw.githubusercontent.com/snipe/snipe-it/master/install.sh
+sudo apt-get update
+```
+
+```shell
+sudo apt-get upgrade
 ```
