@@ -160,4 +160,16 @@ sudo cp -r *.* /var/www/html
 
 <kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/35c6f085-7247-451a-beb2-e417c0ce8472)</kdb>
 
+### 4. DAR PERMISOS A APACHE PARA ESCRITURA EN CIERTOS DIRECTORIOS
 
+Según la propia documentación oficial:
+
+'There are times when Apache will need to be able to write to two of the directories - specifically the /drawings (maps of your data centers) and /pictures (pictures of your devices) folders. To do this, we need to set the group for those folders to the group that Apache is running as. On a default Ubuntu 15.04 server, that group is called www-data.'
+
+Pero al lanzar el comando citado, da error, pues los dos folders en concreto no existen ('pictures' ni 'drawings'). Hay una carpeta que pudiera ser similar llamada 'images'. De momento no hacemos nada, pero dejamos aquí pauntado el comando pr si en un futuro la ejecución de la plaicación nos arroja algún error, tal vez sea esta configuración que hemos de ejecutar:
+
+```shell
+sudo chgrp -R www-data /var/www/html/pictures /var/www/html/drawings
+```
+
+### 5.
