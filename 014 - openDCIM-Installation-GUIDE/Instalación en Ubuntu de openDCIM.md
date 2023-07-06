@@ -31,7 +31,9 @@ sudo apt-get install apache2
 ```
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/15f8dcdc-7cc2-4d2b-875b-054394a92173)</kbd>
+
 ...
+
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/5675ae76-529d-4f7b-ac41-0d372ea3ff5c)</kbd>
 
 Una vez instalado, habilitamos que se inicie automáticamente el servicio en cada booteo del sistema, con el comando:
@@ -39,12 +41,15 @@ Una vez instalado, habilitamos que se inicie automáticamente el servicio en cad
 ```shell
 sudo systemctl enable apache2
 ```
+
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/04adc594-d450-4ab6-bf36-425378015de1)</kbd>
 
 Podemos comprobar su estado con:
+
 ```shell
 sudo systemctl status apache2
 ```
+
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/56634986-33ff-466f-bbc1-dfd3482ac6b9)</kbd>
 
 En un navegador, accedemos a la URL http://localhost o http://127.0.0.1 o http://<nombre de nuestro máquina virtual> y comprobamos si funciona:
@@ -65,6 +70,7 @@ Que podemos instalarlos todos al mismo tiempo con el ocmando siguiente:
 ```shell
 sudo apt-get install php-snmp snmp-mibs-downloader php-curl php-gettext graphviz
 ```
+
 O de uno en uno :
 
 ```shell
@@ -72,7 +78,9 @@ sudo apt-get install php-snmp
 ```
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/d494ea0d-1395-462a-a8d7-3a531dcc25c8)</kbd>
+
 ...
+
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/4a13f985-d14c-4211-b595-b354726f1d4d)</kbd>
 
 ```shell
@@ -80,6 +88,9 @@ sudo apt-get install snmp-mibs-downloader
 ```
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/f44b101b-4813-4cb9-90f7-fd1fffee3c18)</kbd>
+
+...
+
 <kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/109910d3-e184-4be5-b12e-7e9c876f51a1)</kdb>
 
 
