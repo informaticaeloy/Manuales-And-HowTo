@@ -32,7 +32,7 @@ sudo apt-get install apache2
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/15f8dcdc-7cc2-4d2b-875b-054394a92173)</kbd>
 
-...
+:scissors: [imagen recortada]
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/5675ae76-529d-4f7b-ac41-0d372ea3ff5c)</kbd>
 
