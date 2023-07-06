@@ -79,7 +79,7 @@ sudo apt-get install php-snmp
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/d494ea0d-1395-462a-a8d7-3a531dcc25c8)</kbd>
 
-...
+:scissors: [imagen recortada]
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/4a13f985-d14c-4211-b595-b354726f1d4d)</kbd>
 
@@ -89,7 +89,7 @@ sudo apt-get install snmp-mibs-downloader
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/f44b101b-4813-4cb9-90f7-fd1fffee3c18)</kbd>
 
-...
+:scissors: [imagen recortada]
 
 <kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/109910d3-e184-4be5-b12e-7e9c876f51a1)</kdb>
 
@@ -98,16 +98,22 @@ sudo apt-get install snmp-mibs-downloader
 sudo apt-get install php-curl 
 ```
 
-<kbd> </kbd>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/e694bb12-ffad-4be4-bd67-63fe00ed8832)</kbd>
+
+Según la documentación oficial, el siguiente paquete adicional a instalar sería php-gettext, pero este nos ha dado un error al instalarlo, diciéndonos "Unable to locate package php-gettext", por lo que buscando en ointernet creemos que hace referencia a "gettext" directamente, por lo que procedemos a instalarlo usando ese segundo nombre:
 
 ```shell
-sudo apt-get install php-gettext
+sudo apt-get install gettext
 ```
 
-<kbd> </kbd>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/4739e1b0-be1f-420c-b4d3-f3214cae23ea)</kbd>
 
 ```shell
 sudo apt-get install graphviz
 ```
 
-<kbd> </kbd>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/43d30a4e-846f-4293-86c8-913baa1b5cea)</kbd>
+
+:scissors: [imagen recortada]
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/7f4e9b33-129a-48a1-a4f9-9fb1206d133e)</kbd>
