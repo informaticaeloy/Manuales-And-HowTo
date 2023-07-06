@@ -14,23 +14,41 @@ Partimos de un Ubuntu Desktop 22.04 instalado como máquina virtual en un VMWare
 El sistema lo tenemos actualizado con los comandos:
 
 ```shell
-sudo apt-get ipdate
+sudo apt-get update
 ```
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/ac970b87-12b3-4951-82c5-2f0bb30a03df)</kbd>
 
 ```shell
 sudo apt-get upgrade
 ```
 
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/225445d6-cc1c-4164-9e5d-c31fff1a2349)</kbd>
+
 ### 1. INSTALACIÓN DE APACHE
 
 ```shell
-apt-get install apache2
+sudo apt-get install apache2
 ```
 
-<kbd>![image](https://user-images.githubusercontent.com/20743678/190367570-093d6ac2-c0b4-4a21-b824-cae5bb0f524e.png)</kbd>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/15f8dcdc-7cc2-4d2b-875b-054394a92173)</kbd>
+...
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/5675ae76-529d-4f7b-ac41-0d372ea3ff5c)</kbd>
 
-En un navegador, accedemos a la URL de nuestro máquina virtual y comprobamos si funciona:
+Una vez instalado, habilitamos que se inicie automáticamente el servicio en cada booteo del sistema, con el comando:
 
-<kbd>![image](https://user-images.githubusercontent.com/20743678/190367841-1938c201-9728-45b7-85e6-ec12a9243a86.png)</kbd>
+```shell
+sudo systemctl enable apache2
+```
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/04adc594-d450-4ab6-bf36-425378015de1)</kbd>
+
+Podemos comprobar su estado con:
+```shell
+sudo systemctl status apache2
+```
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/56634986-33ff-466f-bbc1-dfd3482ac6b9)</kbd>
+
+En un navegador, accedemos a la URL http://localhost o http://127.0.0.1 o http://<nombre de nuestro máquina virtual> y comprobamos si funciona:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/fc8e915a-c765-4ba5-9011-899f11c81bb3)</kbd>
 
 ### 2. INSTALACIÓN DE PHP 8
