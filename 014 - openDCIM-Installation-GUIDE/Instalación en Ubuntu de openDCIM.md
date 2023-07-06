@@ -117,3 +117,18 @@ sudo apt-get install graphviz
 :scissors: [imagen recortada]
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/7f4e9b33-129a-48a1-a4f9-9fb1206d133e)</kbd>
+
+### 3. DESCARGA Y DESCOMPRESIÓN DE openDCIM
+
+Nos creamos una carpeta personal donde realizar la descarga, por ejemplo en /home/usuario que se llame openDCIM y dentro de ella nos descargamos el openDCIM. En el momento de hacer este tutorial la última versión es la 23.01, pero podemos revisar cual es la última accediendo a https://opendcim.org/downloads.html y viendo cual es la direción de la relesae que interese:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/a87aab7b-a288-4cdc-9055-4186a478f5f8)</kbd>
+
+Y ese enlace será el que nos descargaremos haciendo uso del comando wget:
+
+```shell
+wget https://opendcim.org/packages/openDCIM-23.01.tar.gz
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/6ac332aa-43cf-49dc-b80b-4b3cdab317b7)</kbd>
+
