@@ -132,3 +132,32 @@ wget https://opendcim.org/packages/openDCIM-23.01.tar.gz
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/6ac332aa-43cf-49dc-b80b-4b3cdab317b7)</kbd>
 
+Descomprimimos el fichero descargado con el comando
+
+```shell
+sudo tar zxpvf openDCIM-23.01.tar.gz 
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/07367666-457f-40a4-b5f9-9d2944d60e78)</kbd>
+
+:scissors: [imagen recortada]
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/36661f74-b1ba-4c9d-bf99-ba0e34f9485e)</kbd>
+
+y veremos que nos ha creado una carpera con todo el contenido del fichero comprimido:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/32bc6521-f33d-45f3-9bad-8897cc6b72c1)</kbd>
+
+Como estamos usando Apache2, los ficheros de nuestro servidor web han de estar en /var/www/html, por lo que vamos a copiar todo el contenido de esta carpeta nueva descomprimida en la ruta /var/www/html con el siguiente comando:
+
+```shell
+cd /home/usuario/openDCIM-23.01
+```
+
+```shell
+sudo cp -r *.* /var/www/html
+```
+
+<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/35c6f085-7247-451a-beb2-e417c0ce8472)</kdb>
+
+
