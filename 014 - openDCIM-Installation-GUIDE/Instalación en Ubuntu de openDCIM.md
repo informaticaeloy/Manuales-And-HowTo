@@ -172,4 +172,18 @@ Pero al lanzar el comando citado, da error, pues los dos folders en concreto no 
 sudo chgrp -R www-data /var/www/html/pictures /var/www/html/drawings
 ```
 
-### 5.
+### 5.INSTALACIÓN DE MYSQL
+
+```shell
+sudo apt-get install mysql-client mysql-server
+```
+
+<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/f6e91c53-21b0-403c-9bda-035520a62aa8)</kdb>
+
+:scissors: [imagen recortada]
+
+<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/cd622087-9fea-4173-908c-368ce573080e)</kdb>
+
+### 6. CREACIÓN DE LA BASE DE DATOS
+
+
