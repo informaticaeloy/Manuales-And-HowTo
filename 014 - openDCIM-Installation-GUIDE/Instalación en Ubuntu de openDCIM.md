@@ -51,4 +51,15 @@ En un navegador, accedemos a la URL http://localhost o http://127.0.0.1 o http:/
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/fc8e915a-c765-4ba5-9011-899f11c81bb3)</kbd>
 
-### 2. INSTALACIÓN DE PHP 8
+### 2. INSTALACIÓN DE PAQUETES ADICIONALES NECESARIOS
+
+los paquetes necesarios son:
++ php-snmp
++ snmp-mibs-downloader
++ php-curl
++ php-gettext
++ graphviz
+  
+```shell
+sudo apt-get install php-snmp snmp-mibs-downloader php-curl php-gettext graphviz
+```
