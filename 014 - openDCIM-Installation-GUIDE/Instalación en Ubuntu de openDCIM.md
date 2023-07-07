@@ -208,6 +208,11 @@ systemctl status mysql
 
 #### 5.1 Securizando MySQL
 
+```shell
+sudo mysql_secure_installation
+```
+
+
 
 
 
