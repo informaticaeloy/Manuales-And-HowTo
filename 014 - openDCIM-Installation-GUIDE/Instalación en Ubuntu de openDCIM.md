@@ -258,6 +258,37 @@ Finalmente, el último mensaje que nos sale es para indicarnos que todo está he
 
 ### 6. CREACIÓN DE LA BASE DE DATOS
 
+Llegados a este punto, crearemos la BBDD en MariaDB y asignaremos permisos a un usuario para poder trabajar con dicha BBDD. Para ello, accedemos al terminal de MariaDB con el siguiente comando:
+
+```shell
+sudo  mysql -u root -p
+```
+
+Con este comando le decimos que queremos iniciar el terminal de MariaDB con el usuario root (identificado con el parámetro -u) y con -p le decimos que nos pida el password del mismo 
+
+<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/7e85a095-080b-47a5-8e65-3f7fdc33c345)</kdb>
+
+Ahora, dentro del terminal, creamos la nueva base de datos que se llamará ¡dcim' con el siguiente comando:
+
+```shell
+create database dcim;
+```
+
+y asignaremos todos los permisos a todas las tablas dentro de la basea de datos 'dcim' (dcim.*) al usuario 'dcim@localhost' y le asignaremos la contraseña 'passdcim', mediante el siguiente comando:
+
+```shell
+grant all privileges on dcim.* to'dcim@localhost' identified by 'passdcim';
+```
+
+<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/fea22e17-0ead-4c5d-8caa-b1fd2e6dd648)</kdb>
+
+Finalmente saldremos con quit
+
+```shell
+quit
+```
+
+<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/71e7ec5b-67b0-437f-b26f-e946a9b7017b)</kdb>
 
 
 
