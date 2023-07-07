@@ -208,10 +208,17 @@ systemctl status mysql
 
 #### 5.1 Securizando MySQL
 
+Vamos a realizar una serie de acciones para securizar el acceso al SQL. Ejecutaremos el siguiente comando:
+
 ```shell
 sudo mysql_secure_installation
 ```
 
+<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/48e77d96-0b53-4387-a91e-0ff77e05cc1e)</kdb>
+
+Y en la pregunta "Enter current password for root (enter for none):", no introduciremos ninguna contraseña, simplemente le daremos a ENTER:
+
+<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/f351131c-96e1-4724-911b-893ca497d64a)</kdb>
 
 
 
