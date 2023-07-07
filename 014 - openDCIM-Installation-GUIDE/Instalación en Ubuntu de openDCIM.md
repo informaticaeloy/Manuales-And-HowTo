@@ -91,7 +91,7 @@ sudo apt-get install snmp-mibs-downloader
 
 :scissors: [imagen recortada]
 
-<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/109910d3-e184-4be5-b12e-7e9c876f51a1)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/109910d3-e184-4be5-b12e-7e9c876f51a1)</kbd>
 
 
 ```shell
@@ -158,7 +158,7 @@ cd /home/usuario/openDCIM-23.01
 sudo cp -r *.* /var/www/html
 ```
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/35c6f085-7247-451a-beb2-e417c0ce8472)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/35c6f085-7247-451a-beb2-e417c0ce8472)</kbd>
 
 ### 4. DAR PERMISOS A APACHE PARA ESCRITURA EN CIERTOS DIRECTORIOS
 
@@ -178,15 +178,15 @@ sudo chgrp -R www-data /var/www/html/pictures /var/www/html/drawings
 sudo apt-get install mariadb-server
 ```
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/256fb5e5-95b1-4a2b-8f68-559c588a3a52)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/256fb5e5-95b1-4a2b-8f68-559c588a3a52)</kbd>
 
 :scissors: [imagen recortada]
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/90648983-3360-4721-bee7-26b243e78e42)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/90648983-3360-4721-bee7-26b243e78e42)</kbd>
 
 Si ya existe una instalación previa de MySQL o MariaDB en el sistema, nos avisará diciendo que va a guardar una copia de la carpeta con otro nombre para pder rescatar los datos si nos hace falta:
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/85b8f351-1a6a-4a10-86a1-d775abe2b7d6)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/85b8f351-1a6a-4a10-86a1-d775abe2b7d6)</kbd>
 
 Hacemos que el servicio MariaDB arranque automáticamente en cada booteo del sistema con el comando:
 
@@ -196,7 +196,7 @@ systemctl enable mysql
 
 EL servicio, aunque sea mariaDB-server, no se inicia con ese nombre, se hace con 'mysql':
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/2b48bbb1-51ec-467e-a12c-74ed2c378480)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/2b48bbb1-51ec-467e-a12c-74ed2c378480)</kbd>
 
 Podemos comprobar si está corriendo corectamente con el comando:
 
@@ -204,7 +204,7 @@ Podemos comprobar si está corriendo corectamente con el comando:
 systemctl status mysql
 ```
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/ba4172a7-09e4-47a0-b0ae-4c7384e7d7e6)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/ba4172a7-09e4-47a0-b0ae-4c7384e7d7e6)</kbd>
 
 #### 5.1 Securizando MySQL
 
@@ -214,47 +214,47 @@ Vamos a realizar una serie de acciones para securizar el acceso al SQL. Ejecutar
 sudo mysql_secure_installation
 ```
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/48e77d96-0b53-4387-a91e-0ff77e05cc1e)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/48e77d96-0b53-4387-a91e-0ff77e05cc1e)</kbd>
 
 Y en la pregunta "Enter current password for root (enter for none):", no introduciremos ninguna contraseña, simplemente le daremos a ENTER:
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/f351131c-96e1-4724-911b-893ca497d64a)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/f351131c-96e1-4724-911b-893ca497d64a)</kbd>
 
 Lo siguiente que nos pregunta es si queremos cambiar a "autenticación unix_socket", advirtiéndonos de que ya tenemos nuestra cuenta root protegida, mediante la pregunta "You already have your root account protected, so you can safely answer 'n'."
 "Switch to unix_socket authentication [Y/n] " , a lo que responderemos "n"
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/10a160d6-3f7f-4256-95ae-b24a45741aaf)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/10a160d6-3f7f-4256-95ae-b24a45741aaf)</kbd>
 
 Después, nos pregunta si queremos cambiar la contraseña del usuario root, mediante la pregunta "You already have your root account protected, so you can safely answer 'n'.
 Change the root password? [Y/n]", a lo que responderemos "n"
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/4fa2a9eb-f17c-4fbe-ae85-d27234414344)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/4fa2a9eb-f17c-4fbe-ae85-d27234414344)</kbd>
 
 La siguiente pregunta es si queremos eliminar los usuarios anónimos que existen por defecto en MariaDB, mediante la pregunta "By default, a MariaDB installation has an anonymous user, allowing anyone
 to log into MariaDB without having to have a user account created for them.  This is intended only for testing, and to make the installation go a bit smoother.  You should remove them before moving into a production environment.
 Remove anonymous users? [Y/n]", a lo que responderemos "Yes" -> 'Y'
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/ed8c7ef9-0bcd-4f66-98ae-25e63755927e)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/ed8c7ef9-0bcd-4f66-98ae-25e63755927e)</kbd>
 
 La siguiente pregunta que nos hace es si queremos eliminar el acceso remoto del usuario root a la Base de Datos, mediante la pregunta "Normally, root should only be allowed to connect from 'localhost'.  This
 ensures that someone cannot guess at the root password from the network.
 Disallow root login remotely? [Y/n] ", a lo que responderemos "Yes" -> "Y", ya que normalmente el usuario root siempre se conectará desde el propio equipo localhost, no desde una ubicación remota, por lo que de esta forma eliminamos esta posibilidad securizando nuestro servidor.
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/7214e0a8-0941-4428-9f58-2b97892bbe93)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/7214e0a8-0941-4428-9f58-2b97892bbe93)</kbd>
 
 La siguiente consulta es si queremos eliminar la base de datos de pruebas llamada "test" que MariaDB trae por creada por defecto y que todos los usuarios tienen acceso, interesante para aprender y practicar en un entorno de desarrollo pero no recomendable en un entorno de producción, mediante la pregunta "By default, MariaDB comes with a database named 'test' that anyone can access.  This is also intended only for testing, and should be removed before moving into a production environment.
 Remove test database and access to it? [Y/n]", a lo que responderemos "Yes" -> "Y"
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/def6e5fd-573a-4be5-ac4d-fac4ab58724e)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/def6e5fd-573a-4be5-ac4d-fac4ab58724e)</kbd>
 
 Y ya, la última pregunta que nos hace, es si queremos aplicar todas las nuevas reglas a las tablas existentes y la nueva seguridad configurada, mediante la pregunta "Reloading the privilege tables will ensure that all changes made so far will take effect immediately.
 Reload privilege tables now? [Y/n] ", a lo que responderemos "Yes" -> "Y"
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/0cb65ea2-76d8-4b78-aa35-2be49d764b8e)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/0cb65ea2-76d8-4b78-aa35-2be49d764b8e)</kbd>
 
 Finalmente, el último mensaje que nos sale es para indicarnos que todo está hecho y "Thanks for using MariaDB!"
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/524ee533-e97e-41cd-a78a-c7fa0084bb4a)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/524ee533-e97e-41cd-a78a-c7fa0084bb4a)</kbd>
 
 ### 6. CREACIÓN DE LA BASE DE DATOS
 
@@ -266,7 +266,7 @@ sudo  mysql -u root -p
 
 Con este comando le decimos que queremos iniciar el terminal de MariaDB con el usuario root (identificado con el parámetro -u) y con -p le decimos que nos pida el password del mismo 
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/7e85a095-080b-47a5-8e65-3f7fdc33c345)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/7e85a095-080b-47a5-8e65-3f7fdc33c345)</kbd>
 
 Ahora, dentro del terminal, creamos la nueva base de datos que se llamará ¡dcim' con el siguiente comando:
 
@@ -280,7 +280,7 @@ y asignaremos todos los permisos a todas las tablas dentro de la basea de datos 
 grant all privileges on dcim.* to'dcim@localhost' identified by 'passdcim';
 ```
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/fea22e17-0ead-4c5d-8caa-b1fd2e6dd648)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/fea22e17-0ead-4c5d-8caa-b1fd2e6dd648)</kbd>
 
 Finalmente saldremos con quit
 
@@ -288,7 +288,7 @@ Finalmente saldremos con quit
 quit
 ```
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/71e7ec5b-67b0-437f-b26f-e946a9b7017b)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/71e7ec5b-67b0-437f-b26f-e946a9b7017b)</kbd>
 
 
 
