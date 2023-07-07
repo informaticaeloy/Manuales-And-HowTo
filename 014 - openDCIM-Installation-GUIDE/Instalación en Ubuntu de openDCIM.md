@@ -91,7 +91,7 @@ sudo apt-get install snmp-mibs-downloader
 
 :scissors: [imagen recortada]
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/109910d3-e184-4be5-b12e-7e9c876f51a1)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/109910d3-e184-4be5-b12e-7e9c876f51a1)</kdb>
 
 
 ```shell
@@ -257,5 +257,7 @@ Finalmente, el último mensaje que nos sale es para indicarnos que todo está he
 <kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/524ee533-e97e-41cd-a78a-c7fa0084bb4a)</kdb>
 
 ### 6. CREACIÓN DE LA BASE DE DATOS
+
+
 
 
