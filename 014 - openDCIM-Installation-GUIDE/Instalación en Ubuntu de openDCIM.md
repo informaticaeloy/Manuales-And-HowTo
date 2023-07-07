@@ -175,14 +175,41 @@ sudo chgrp -R www-data /var/www/html/pictures /var/www/html/drawings
 ### 5.INSTALACIÓN DE MYSQL
 
 ```shell
-sudo apt-get install mysql-client mysql-server
+sudo apt-get install mariadb-server
 ```
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/f6e91c53-21b0-403c-9bda-035520a62aa8)</kdb>
+<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/256fb5e5-95b1-4a2b-8f68-559c588a3a52)</kdb>
 
 :scissors: [imagen recortada]
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/cd622087-9fea-4173-908c-368ce573080e)</kdb>
+<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/90648983-3360-4721-bee7-26b243e78e42)</kdb>
+
+Si ya existe una instalación previa de MySQL o MariaDB en el sistema, nos avisará diciendo que va a guardar una copia de la carpeta con otro nombre para pder rescatar los datos si nos hace falta:
+
+<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/85b8f351-1a6a-4a10-86a1-d775abe2b7d6)</kdb>
+
+Hacemos que el servicio MariaDB arranque automáticamente en cada booteo del sistema con el comando:
+
+```shell
+systemctl enable mysql
+```
+
+EL servicio, aunque sea mariaDB-server, no se inicia con ese nombre, se hace con 'mysql':
+
+<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/2b48bbb1-51ec-467e-a12c-74ed2c378480)</kdb>
+
+Podemos comprobar si está corriendo corectamente con el comando:
+
+```shell
+systemctl status mysql
+```
+
+<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/ba4172a7-09e4-47a0-b0ae-4c7384e7d7e6)</kdb>
+
+#### 5.1 Securizando MySQL
+
+
+
 
 ### 6. CREACIÓN DE LA BASE DE DATOS
 
