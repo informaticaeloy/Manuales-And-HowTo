@@ -280,7 +280,7 @@ y asignaremos todos los permisos a todas las tablas dentro de la basea de datos 
 grant all privileges on dcim.* to'dcim@localhost' identified by 'passdcim';
 ```
 
-<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/fea22e17-0ead-4c5d-8caa-b1fd2e6dd648)</kbd>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/e0568276-03c6-4059-bc9d-e1874dc16d7a)</kbd>
 
 Finalmente saldremos con quit
 
