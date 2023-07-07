@@ -220,8 +220,41 @@ Y en la pregunta "Enter current password for root (enter for none):", no introdu
 
 <kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/f351131c-96e1-4724-911b-893ca497d64a)</kdb>
 
+Lo siguiente que nos pregunta es si queremos cambiar a "autenticación unix_socket", advirtiéndonos de que ya tenemos nuestra cuenta root protegida, mediante la pregunta "You already have your root account protected, so you can safely answer 'n'."
+"Switch to unix_socket authentication [Y/n] " , a lo que responderemos "n"
 
+<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/10a160d6-3f7f-4256-95ae-b24a45741aaf)</kdb>
 
+Después, nos pregunta si queremos cambiar la contraseña del usuario root, mediante la pregunta "You already have your root account protected, so you can safely answer 'n'.
+Change the root password? [Y/n]", a lo que responderemos "n"
+
+<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/4fa2a9eb-f17c-4fbe-ae85-d27234414344)</kdb>
+
+La siguiente pregunta es si queremos eliminar los usuarios anónimos que existen por defecto en MariaDB, mediante la pregunta "By default, a MariaDB installation has an anonymous user, allowing anyone
+to log into MariaDB without having to have a user account created for them.  This is intended only for testing, and to make the installation go a bit smoother.  You should remove them before moving into a production environment.
+Remove anonymous users? [Y/n]", a lo que responderemos "Yes" -> 'Y'
+
+<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/ed8c7ef9-0bcd-4f66-98ae-25e63755927e)</kdb>
+
+La siguiente pregunta que nos hace es si queremos eliminar el acceso remoto del usuario root a la Base de Datos, mediante la pregunta "Normally, root should only be allowed to connect from 'localhost'.  This
+ensures that someone cannot guess at the root password from the network.
+Disallow root login remotely? [Y/n] ", a lo que responderemos "Yes" -> "Y", ya que normalmente el usuario root siempre se conectará desde el propio equipo localhost, no desde una ubicación remota, por lo que de esta forma eliminamos esta posibilidad securizando nuestro servidor.
+
+<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/7214e0a8-0941-4428-9f58-2b97892bbe93)</kdb>
+
+La siguiente consulta es si queremos eliminar la base de datos de pruebas llamada "test" que MariaDB trae por creada por defecto y que todos los usuarios tienen acceso, interesante para aprender y practicar en un entorno de desarrollo pero no recomendable en un entorno de producción, mediante la pregunta "By default, MariaDB comes with a database named 'test' that anyone can access.  This is also intended only for testing, and should be removed before moving into a production environment.
+Remove test database and access to it? [Y/n]", a lo que responderemos "Yes" -> "Y"
+
+<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/def6e5fd-573a-4be5-ac4d-fac4ab58724e)</kdb>
+
+Y ya, la última pregunta que nos hace, es si queremos aplicar todas las nuevas reglas a las tablas existentes y la nueva seguridad configurada, mediante la pregunta "Reloading the privilege tables will ensure that all changes made so far will take effect immediately.
+Reload privilege tables now? [Y/n] ", a lo que responderemos "Yes" -> "Y"
+
+<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/0cb65ea2-76d8-4b78-aa35-2be49d764b8e)</kdb>
+
+Finalmente, el último mensaje que nos sale es para indicarnos que todo está hecho y "Thanks for using MariaDB!"
+
+<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/524ee533-e97e-41cd-a78a-c7fa0084bb4a)</kdb>
 
 ### 6. CREACIÓN DE LA BASE DE DATOS
 
