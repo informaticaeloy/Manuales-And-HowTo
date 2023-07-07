@@ -290,5 +290,56 @@ quit
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/71e7ec5b-67b0-437f-b26f-e946a9b7017b)</kbd>
 
+#### 6.1 Otros comandos
 
+Podemos hacer varias comprobaciones de funcionamiento de MariaDB. Para ello, accedemos nuevamente al terminal de MySQL con el comando:
+
+```shell
+sudo mysql -u root -p
+```
+
+Y podemos ver la versión que tenemos corriendo con el comando siguiente:
+
+```shell
+SELECT VERSION();
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/d3516bda-8821-4220-b359-6d8bba52edc7)</kbd>
+
+
+Podemos ver todas las bases de datos creadas con el comando:
+
+```shell
+show databases;
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/6cbcebbe-88f6-435c-b867-af1cc2ca4a25)</kbd>
+
+O los usuarios asignados a las bases de datos:
+
+```shell
+SELECT u.User,Db FROM mysql.user u,mysql.db d WHERE u.User=d.User;
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/bbc0bc3c-d617-4185-b481-3ca8a976d2d0)</kbd>
+
+### 7. CONFIGURACIÓN DE OPENDCIM PARA TENER ACCESO A LA BASE DE DATOS
+
+Nuestros ficheros del servidor web están en /var/www/html, por lo que accedemos a esa carpeta y hacemos una copia del fichero db.inc.php-dist en otro nuevo llamado db.inc.php :
+
+```shell
+cd /var/www/html
+```
+
+```shell
+sudo cp db.inc.php-dist db.inc.php
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/e4a05254-6b21-4cc8-91c9-f10c89413b1e)</kbd>
+
+Luego lo editamos con nano y modificamos con los datos necesarios. En nuestro caso, el usuario de la base de datos, el password, el nombre de la base de datos si la hemos cambiado, etc.
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/1cdeddc6-b915-46c5-ac8b-0be3dede9d27)</kbd>
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/24921669-2f8c-41ef-8f60-dbbf82f8a11a)</kbd>
 
