@@ -446,3 +446,9 @@ sudo systemctl status apache2
 ```
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/1fe88533-1c2e-4150-9730-8801292baa19)</kbd>
+
+### 10. PRUEBA DE FUNCIONAMIENTO DE NUESTRO WEBSITE
+
+Accedemos a un navegador y visitamos https://localhost (recuerda el https)
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/96aef565-5dc3-4ab0-ae7c-81fd1adf6afb)</kbd>
