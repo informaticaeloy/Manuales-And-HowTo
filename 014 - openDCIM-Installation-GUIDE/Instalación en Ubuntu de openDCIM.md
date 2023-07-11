@@ -355,7 +355,7 @@ Luego lo editamos con nano y modificamos con los datos necesarios. En nuestro ca
 
 ### 8. CONFIGURACIÓN DE APACHE 
 
-El fichero de configuración de apache está en /etc/apache2/sites-available/000-default.conf
+El fichero de configuración de apache está en /etc/apache2/sites-available/000-default.conf y /etc/apache2/sites-available/default-ssl.conf
 
 Vamos a editarlo para hacerle las modificaciones necesarias:
 
@@ -364,6 +364,45 @@ cd /etc/apache2/sites-available
 ```
 
 ```shell
-sudo nano 000-default.conf
+sudo nano default-ssl.conf
 ```
+
+Lo editamos con nano. Estos son dos pantallazos del antes y del después:
+
+ANTES:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/433f88bb-47e7-491b-b7c3-1807ee1a9ec0)</kbd>
+
+DESPUES:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/c0f14473-f20e-4e29-a967-bfb38dc388d4)</kbd>
+
+### 9. CONFIGURAR EL ACCESO DEL USUARIO A NUESTRO WEBSITE
+
+Vamos a posicionarnos en la carpeta /var/www/html y vamos a editar con nao un nuevo fichero llamado .htaccess
+
+```shell
+cd /
+```
+
+```shell
+cd /var/www/html
+```
+
+```shell
+sudo nano .htaccess
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/6485fe64-a7d4-407f-bd48-faac4bc59b81)<kbd>
+
+Y agregaremos estas 4 líneas:
+
+```shell
+AuthType Basic
+AuthName "openDCIM"
+AuthUserFile /var/www/opendcim.password
+Require valid-user
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/853b3265-95b1-440b-bcbc-b470116f4bb4)<kbd>
 
