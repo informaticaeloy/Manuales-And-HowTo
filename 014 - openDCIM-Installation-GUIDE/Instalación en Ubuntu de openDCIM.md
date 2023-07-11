@@ -452,3 +452,14 @@ sudo systemctl status apache2
 Accedemos a un navegador y visitamos https://localhost (recuerda el https)
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/96aef565-5dc3-4ab0-ae7c-81fd1adf6afb)</kbd>
+
+Ya parece que funciona, aunque nos arroja una serie de errores que solventaremos fácilmente:
+
+![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/be3a117c-f97f-47ca-9442-28ff8baed0dc)
+
+sudo apt-get install php8.1-mbstring
+
+sudo systemctl restart apache2
+
+
+
