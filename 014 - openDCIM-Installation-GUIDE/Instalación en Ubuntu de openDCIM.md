@@ -59,6 +59,7 @@ En un navegador, accedemos a la URL http://localhost o http://127.0.0.1 o http:/
 ### 2. INSTALACIÓN DE PAQUETES ADICIONALES NECESARIOS
 
 Los paquetes necesarios son:
++ php
 + php-snmp
 + snmp-mibs-downloader
 + php-curl
@@ -68,10 +69,19 @@ Los paquetes necesarios son:
 Que podemos instalarlos todos al mismo tiempo con el ocmando siguiente:
 
 ```shell
-sudo apt-get install php-snmp snmp-mibs-downloader php-curl php-gettext graphviz
+sudo apt-get install php php-snmp snmp-mibs-downloader php-curl php-gettext graphviz
 ```
 
 O de uno en uno :
+
+```shell
+sudo apt-get install php
+```
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/4a3935fe-7bf3-4ef6-9a14-2c7fb636f2c6)</kbd>
+
+:scissors: [imagen recortada]
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/353d9e05-910e-4aaa-9114-44c3d617e989)</kbd>
 
 ```shell
 sudo apt-get install php-snmp 
