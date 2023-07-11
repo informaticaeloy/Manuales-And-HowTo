@@ -343,3 +343,17 @@ Luego lo editamos con nano y modificamos con los datos necesarios. En nuestro ca
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/24921669-2f8c-41ef-8f60-dbbf82f8a11a)</kbd>
 
+### 8. CONFIGURACIÓN DE APACHE 
+
+El fichero de configuración de apache está en /etc/apache2/sites-available/000-default.conf
+
+Vamos a editarlo para hacerle las modificaciones necesarias:
+
+```shell
+cd /etc/apache2/sites-available
+```
+
+```shell
+sudo nano 000-default.conf
+```
+
