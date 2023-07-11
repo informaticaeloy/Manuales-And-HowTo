@@ -393,7 +393,7 @@ cd /var/www/html
 sudo nano .htaccess
 ```
 
-<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/6485fe64-a7d4-407f-bd48-faac4bc59b81)<kbd>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/3bf11c8d-328f-4206-9d80-1a5b1b05fb5c)<kbd>
 
 Y agregaremos estas 4 líneas:
 
@@ -406,3 +406,43 @@ Require valid-user
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/853b3265-95b1-440b-bcbc-b470116f4bb4)<kbd>
 
+Ahora asignamos permisos especiales al fichero /var/www/opendcim.password que es el que hemos indicado dentro de /var/www/html/.htaccess 
+
+```shell
+sudo htpasswd -cb /var/www/opendcim.password dcim dcim
+```
+
+![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/f41b3b48-82dd-4560-877f-5a3fe3f911e7)
+
+```shell
+sudo a2enmod ssl
+```
+
+```shell
+systemctl restart apache2
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/5fff4637-e0c3-4623-9cfb-f017d790a71c)</kbd>
+
+```shell
+sudo a2enmod rewrite
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/c587d2c5-4773-4dff-a8f2-a5780cf1675e)</kbd>
+
+```shell
+sudo a2ensite default-ssl
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/134c761b-089f-4e65-9fe1-4c5d062f0e6a)</kbd>
+
+
+```shell
+sudo systemctl restart apache2
+```
+
+```shell
+sudo systemctl status apache2
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/1fe88533-1c2e-4150-9730-8801292baa19)</kbd>
