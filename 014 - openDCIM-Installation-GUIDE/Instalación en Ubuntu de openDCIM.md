@@ -507,6 +507,36 @@ Accedemos mediante el link a rightscheck.php y observamos la siguiente tabla res
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/4a27ec8f-fbbb-4b4c-a0d8-7787fe3caf9f)</kbd>
 
+Damos los permisos solicitados a los directorios:
+
+```shell
+sudo chmod 777 classes
+sudo chmod 777 OSS_SNMP
+sudo chmod 777 css
+sudo chmod 777 template
+sudo chmod 777 font
+sudo chmod 777 images
+sudo chmod 777 locales
+sudo chmod 777 saml
+sudo chmod 777 vendor
+```
+
+Y creamos los directorios que faltan. Luego también les asignamos los permisos:
+
+```shell
+cd /var/www/html
+sudo mkdir assets
+cd assets
+sudo mkdir drawings
+sudo mkdir pictures
+
+sudo chmod 777 drawinds
+sudo chmod 777 pictures
+cd ..
+sudo chmod 777 assets
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/d697d79c-67ce-4fd5-a129-78ec72e32f35)</kbd>
 
 
 
