@@ -453,13 +453,60 @@ Accedemos a un navegador y visitamos https://localhost (recuerda el https)
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/96aef565-5dc3-4ab0-ae7c-81fd1adf6afb)</kbd>
 
+Introduciomos las credenciales que habíamos configurado anteriormente: 
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/c1748b68-cb27-418b-9ca8-1bed104844fc)</kbd>
+
 Ya parece que funciona, aunque nos arroja una serie de errores que solventaremos fácilmente:
 
-![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/be3a117c-f97f-47ca-9442-28ff8baed0dc)
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/be3a117c-f97f-47ca-9442-28ff8baed0dc)</kbd>
 
+```shell
 sudo apt-get install php8.1-mbstring
+```
 
+```shell
 sudo systemctl restart apache2
+```
+
+```shell
+sudo apt-get install php8.1-gd
+```
+
+```shell
+sudo systemctl restart apache2
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/2ef5e3fc-8aeb-4c0e-b1bd-94fc36f7d1dd)<kbd>
+
+```shell
+sudo apt-get install php8.1-zip
+```
+
+```shell
+sudo systemctl restart apache2
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/93c099b3-ecc8-4fb2-ab7b-e58e0db4da35)</kbd>
+
+```shell
+sudo apt-get install php-mysql
+```
+
+```shell
+sudo systemctl restart apache2
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/de655734-19fb-4c70-9f3d-32f87d542192)</kbd>
+
+A partir de este momento, vamos a fijarnos sólamente en este último error, ya que si solucionamos alguno de los otros 2 veremos que ya nunca más podremos volver a esta pantalla de configuración previa de requisitos:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/7908048a-2a33-49f4-8f9e-042c46428235)</kbd>
+
+Accedemos mediante el link a rightscheck.php y observamos la siguiente tabla resumen de carpetas a las que habría que conceder acceso:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/4a27ec8f-fbbb-4b4c-a0d8-7787fe3caf9f)</kbd>
+
 
 
 
