@@ -538,5 +538,18 @@ sudo chmod 777 assets
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/d697d79c-67ce-4fd5-a129-78ec72e32f35)</kbd>
 
+Así nos queda el cuadro resumen de la instalación:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/5e31a675-95c7-4da4-8ddc-20bdd5a6e2e5)</kbd>
+
+Finalmente, hacemos una copia del fichero db.inc.ph-dist en db.inc.php tal y como se nos indica:
+
+```shell
+sudo cp db.inc.ph-dist db.inc.php
+```
+
+Y lo editamos para podener las credenciales de acceso a la BD si no lo habíamos hecho antes. Ahora nos aparece con un aspecto mucho más bonito y podemos seleccionar el idioma deseado:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/afaf9f8c-7a2c-434c-9191-f74c24bfa8fc)</kbd>
 
 
