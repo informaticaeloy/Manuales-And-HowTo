@@ -1,10 +1,13 @@
 # NetBOX-Installation-Guide-Ubuntu
 Sistema free basado en web para gestión de Infraestructuras de Data Centers.
 
-Website: https://netbox.dev/
-Wiki: https://docs.netbox.dev/
-GitHub: https://github.com/netbox-community/netbox
-Releases: https://github.com/netbox-community/netbox/releases
+:house_with_garden: Website: https://netbox.dev/
+
+:books: Wiki: https://docs.netbox.dev/
+
+:computer: GitHub: https://github.com/netbox-community/netbox
+
+:rocket: Releases: https://github.com/netbox-community/netbox/releases
 
 Versión instalada descrita en este manual: v3.5.6 - 2023-07-10
 
@@ -22,3 +25,4 @@ El sistema lo tenemos actualizado con los comandos:
 sudo apt-get update
 ```
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/ac970b87-12b3-4951-82c5-2f0bb30a03df)</kbd>
+
