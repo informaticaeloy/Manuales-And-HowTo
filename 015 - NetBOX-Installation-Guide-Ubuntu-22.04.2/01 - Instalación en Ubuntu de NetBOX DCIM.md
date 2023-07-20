@@ -24,6 +24,7 @@ El sistema lo tenemos actualizado con los comandos:
 ```shell
 sudo apt-get update && sudo apt-get upgrade
 ```
-<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/76004009-4c1b-48f5-a47f-be672050d2cf)</kbd>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/68ef6d8b-83d8-4d66-87a5-60219bb4dfba)
+</kbd>
 
 
