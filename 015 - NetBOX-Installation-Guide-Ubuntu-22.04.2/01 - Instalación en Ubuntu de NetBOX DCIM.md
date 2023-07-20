@@ -22,7 +22,8 @@ Partimos de un Ubuntu Desktop 22.04 instalado como máquina virtual en un VMWare
 El sistema lo tenemos actualizado con los comandos:
 
 ```shell
-sudo apt-get update
+sudo apt-get update && sudo apt-get upgrade
 ```
-<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/ac970b87-12b3-4951-82c5-2f0bb30a03df)</kbd>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/76004009-4c1b-48f5-a47f-be672050d2cf)</kbd>
+
 
