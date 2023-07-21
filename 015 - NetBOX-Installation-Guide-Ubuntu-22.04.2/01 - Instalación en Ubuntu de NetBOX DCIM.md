@@ -461,7 +461,7 @@ Y ya por fin estaremos en la página principal logueados como superadmins:
 
 Ahora, desde la terminal, podremos cerrar el proceso con 'CTRL+C' para continuar con las configuraciones posteriores.
 
-<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/b1711f09-a224-47ff-8e5c-2dd34b635c66)<kbd>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/b1711f09-a224-47ff-8e5c-2dd34b635c66)</kbd>
 
 :bomb: :warning: Tal vez sea un bune momento para hacer un **SNAPSHOT** de la máquina virtual :skull: :eyes:
 
@@ -487,7 +487,7 @@ sudo cp -v /opt/netbox/contrib/*.service /etc/systemd/system/
 
 ```shell
 sudo systemctl daemon-reload
-````
+```
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/806677d1-02e4-4987-a418-28b9bfdc4c86)</kbd>
 
