@@ -101,7 +101,39 @@ Salimos con el comando '\q':
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/043ea5f0-838c-486c-9d4a-a4cd8a1f5f8d)</kbd>
 
+Probamos la conexión del nuevo usuario a la BD. Si estás intentando conectar desde un pc a otro remotamente, cambia 'localhost' por el nombre del equipo remoto. En esta caso, como estamos haciendo la conexión desde el mismo equipo donde está instalado PostgrSQL, usamod 'localhost:
 
+```shell
+psql --username netbox --password --host localhost netbox
+```
+
+Una ver dentro de la consola de PostgreSQL, vcerificamos la información de la conexión con el comando siguiente:
+
+```shell
+\conninfo
+```
+
+Salimos con el comando siguiente:
+
+```shell
+\q
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/a57c3e05-76d1-4ed9-a473-d4ec694f718a)</kbd>
+
+#### 1.2 INSTALACIÓN DE REDIS
+
+```shell
+
+```
+<kbd></kbd>
+```shell
+
+```
+<kbd></kbd>
+```shell
+
+```
 <kbd></kbd>
 ```shell
 
