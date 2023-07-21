@@ -396,3 +396,54 @@ Al acabar la instalación nos sugiere la ejecución de dos comandos para reinici
 
 ##### CREAR UN SUPERUSUARIO
 
+NetBox no viene con ninguna cuenta de usuario predefinida. Hay que crear un superusuario (cuenta administrativa) para poder iniciar sesión en NetBox. Primero, ingresaremos al entorno virtual de Python creado por el script de actualización con el comando siguiente:
+
+```shell
+source /opt/netbox/venv/bin/activate
+```
+
+Una vez que se haya activado el entorno virtual, se puede ver la cadena (venv) antepuesta al indicador de la consola.
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/87fdc11b-188d-42f0-9010-e47e58739c18)</kbd>
+
+A continuación, crearemos una cuenta de superusuario usando el comando de administración de Django 'createsuperuser' (a través de 'manage.py'). No es necesario especificar una dirección de correo electrónico para el usuario, pero asegúrese de utilizar una contraseña muy segura.
+
+```shell
+cd /opt/netbox/netbox
+```
+
+```shell
+python3 manage.py createsuperuser
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/1f68eb2a-04ff-4882-a87f-aa8536c2a4ba)</kbd>
+
+##### Programar una tarea de limpieza
+
+NetBox incluye un comando de administración de limpieza que maneja algunas tareas de limpieza recurrentes, como borrar sesiones antiguas y registros de cambios vencidos. Aunque este comando puede ejecutarse manualmente, se recomienda configurar una tarea programada utilizando el daemon cron del sistema o una utilidad similar.
+
+Se incluye un script de shell que invoca este comando en 'contrib/netbox-housekeeping.sh'. Puede copiarse o vincularse desde el directorio de tareas cron diarias del sistema, o incluirse directamente en el crontab. (Si instalas NetBox en una ruta no estándar, asegúrate de actualizar primero las rutas del sistema dentro de este script). Para ello, accedemos a la carpeta '/opt/netbox/contrib' y con 'ls -la' vemos si ahí existe el fichero llamado 'netbox-housekeeping.sh' . Si es todo correcto, podemos ejecutar el comando de creación de tarea 'cron':
+
+```shell
+sudo ln -s /opt/netbox/contrib/netbox-housekeeping.sh /etc/cron.daily/netbox-housekeeping
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/9970ee5b-5cad-48df-ac87-07eafde7095d)</kbd>
+
+##### PROBAR QUE LA APLICACIÓN FUNCIONA CORRECTAMENTE
+
+Llegados a este punto vamos a probar si todo funciona. Asegúrate de que el entorno virtual sigue activo. Podrás ver la cadena '(venv)' antes del prompt:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/4af2a84c-23e8-4a31-82e0-536880214677)</kbd>
+
+Si está correcto, vamos a la carpeta '/opt/netbox/netbox' y ejecutamos el siguiente comando:
+
+```shell
+cd /opt/netbox/netbox
+```
+
+```shell
+python3 manage.py runserver 0.0.0.0:8000 --insecure
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/13a94aa8-9b4b-4134-bcf0-84b7d5d6fe2c)</kbd>
+
