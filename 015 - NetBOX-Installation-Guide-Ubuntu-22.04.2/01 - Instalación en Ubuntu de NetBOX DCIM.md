@@ -376,11 +376,23 @@ Una vez que se haya configurado NetBox, estamos listos para continuar con la ins
 + Construir la documentación localmente (para uso fuera de línea)
 + Agregar archivos de recursos estáticos en el disco
 
-Tal vez sea un bune momento para hacer un **SNAPSHOT** de la máquina virtual
+:bomb: :warning: Tal vez sea un bune momento para hacer un **SNAPSHOT** de la máquina virtual :skull: :eyes:
 
 Para hacer el upgrade, ejecutaremos el script 'upgrade.sh' ubicado en la carpeta '/opt/netbox' con el iguiente comando:
 
 ```shell
 sudo /opt/netbox/upgrade.sh
 ```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/d3305f4c-dae5-4f2d-9546-1f72908336ab)</kbd>
+
+:scissors: [imagen recortada]
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/a614c1f2-3ab6-4d27-b445-d9945698ed15)</kbd>
+
+Al acabar la instalación nos sugiere la ejecución de dos comandos para reiniciar servicios, aunque el segundo da error. Se ha comprobado que no es improtante este error, podemos obviarlo.
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/157db63b-d721-485b-9f05-deb270bdc2a7)</kbd>
+
+##### CREAR UN SUPERUSUARIO
 
