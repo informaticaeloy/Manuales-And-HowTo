@@ -123,18 +123,58 @@ Salimos con el comando siguiente:
 
 #### 1.2 INSTALACIÓN DE REDIS
 
-```shell
+Redis es un almacén de KEY-VALUE en memoria que NetBox emplea para el almacenamiento en caché y la cola. Esta sección implica la instalación y configuración de una instancia local de Redis. Si ya tienes un servicio de Redis instalado, pasa a la siguiente sección.
 
-```
-<kbd></kbd>
-```shell
+Lo instalamos con el comando siguiente:
 
-```
-<kbd></kbd>
 ```shell
-
+sudo apt-get install -y redis-server
 ```
-<kbd></kbd>
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/4a73a7e5-71ea-425d-8a9e-7d583908596e)</kbd>
+
+Verificamos que se ha instalado correctamente y confirmamos que la versión instalada es posterior a la 4.0 para que sea compatible con la versión de NetBOX::
+
 ```shell
-
+redis-server -v
 ```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/84623fcf-0330-4c25-a736-c9031856ebde)</kbd>
+
+El fichero de configuración de REDIS está en /etc/redis.conf o /etc/redis/redis.conf, pero con la configuración por defecto es suficiente.
+
+Podemos probar si funciona correctamente con el siguiente comando:
+
+```shell
+redis-cli ping
+```
+
+Si todo funciona bien, deberíamos recibir el mensaje 'PONG':
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/c9a1340e-6adc-4adc-90af-e860fc419aa0)</kbd>
+
+#### 1.3 INSTALACIÓN DE NETBOX
+
+NetBOX requiere Python 3.8, 3.9, 3.10 or 3.11. Lo instalamos junto con varias dependencias a otros paquetes con el comando siguiente:
+
+```shell
+sudo apt install -y python3 python3-pip python3-venv python3-dev build-essential libxml2-dev libxslt1-dev libffi-dev libpq-dev libssl-dev zlib1g-dev
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/b6a0c978-58cf-46e7-9b33-e25caa0fa739)</kbd>
+
+:scissors: [imagen recortada]
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/fa592b5d-2bde-41c2-8051-b9ea055c1a2d)</kbd>
+
+Verificamos la versión instalada:
+
+```shell
+python3 -V
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/4e5a7f8a-69cd-4a8a-8e8a-a8c334677566)</kbd>
+
+
+
+
