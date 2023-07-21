@@ -365,3 +365,22 @@ sudo python3 /opt/netbox/netbox/generate_secret_key.py
 Y luego la pegaremos en el fichero que estábamos modificando, configuration.py , en el la entrada de SECRET_KEY = '':
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/10d95a53-3dce-496c-b9f0-2dd7c66a0074)</kbd>
+
+##### LANZAR EL SCRIPT DE UPGRADE
+
+Una vez que se haya configurado NetBox, estamos listos para continuar con la instalación real. Ejecutaremos el script de actualización empaquetado (upgrade.sh) para realizar las siguientes acciones:
+
++ Crear un entorno virtual de Python
++ Instalar todos los paquetes de Python necesarios
++ Ejecutar migraciones de esquemas de bases de datos
++ Construir la documentación localmente (para uso fuera de línea)
++ Agregar archivos de recursos estáticos en el disco
+
+Tal vez sea un bune momento para hacer un **SNAPSHOT** de la máquina virtual
+
+Para hacer el upgrade, ejecutaremos el script 'upgrade.sh' ubicado en la carpeta '/opt/netbox' con el iguiente comando:
+
+```shell
+sudo /opt/netbox/upgrade.sh
+```
+
