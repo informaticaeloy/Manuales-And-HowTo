@@ -279,4 +279,47 @@ sudo cp configuration_example.py configuration.py
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/81cbe49f-b46b-4791-b5b2-65f8b5ae9afc)</kbd>
 
+Editaremos este fichero:
+
+```shell
+sudo nano configuration.py
+```
+
+y configuraremos lo siguiente:
+
+##### ALLOWED_HOSTS
+
+Aquí añadiremos los host desde los que se puede acceder a nuestro sistema. Podemos poner nombres de hosts o direcciones IP. A modo de ejemplo sería:
+
+```shell
+ALLOWED_HOSTS = ['netbox.example.com', '192.0.2.123']
+```
+
+En los que sólo el host con nombre 'netbox.example.com' o el equipo con la IP '192.0.2.123' podrían acceder.
+
+En nuestro caso, para que cualquier equipo pueda acceder, escribiremos lo siguiente:
+
+```shell
+ALLOWED_HOSTS = ['*']
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/3b8bcfa3-17e0-4000-9b87-df24e52030db)</kbd>
+
+##### DATABASE
+
+Este parámetro contiene los detalles de configuración de la base de datos. Hay que definir el nombre de usuario y la contraseña que se utilizó cuando se configuró PostgreSQL. Si el servicio se ejecuta en un host remoto, actualice los parámetros HOST y PORT según corresponda. 
+
+```
+DATABASE = {
+    'NAME': 'netbox',               # Database name
+    'USER': 'netbox',               # PostgreSQL username
+    'PASSWORD': 'J5brHrAXFLQSif0K', # PostgreSQL password
+    'HOST': 'localhost',            # Database server
+    'PORT': '',                     # Database port (leave blank for default)
+    'CONN_MAX_AGE': 300,            # Max database connection age (seconds)
+}
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/0d105ba3-c60d-4ca9-9f07-0806e41176bd)</kbd>
+
 
