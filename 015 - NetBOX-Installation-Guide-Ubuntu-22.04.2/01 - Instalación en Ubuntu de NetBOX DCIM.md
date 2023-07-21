@@ -175,6 +175,54 @@ python3 -V
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/4e5a7f8a-69cd-4a8a-8e8a-a8c334677566)</kbd>
 
+Buscamos en esta URL cuál es la última versión y revisamos qué ruta es:
 
+:rocket: https://github.com/netbox-community/netbox/releases
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/df3f7e90-0caa-444d-96f9-b12427d222c3)</kbd>
+
+Nos la apuntamos para poder usarla después.
+
+La descargamos con 'wget'. La opción general sería esta:
+
+```shell
+sudo wget https://github.com/netbox-community/netbox/archive/refs/tags/vX.Y.Z.tar.gz
+```
+
+Sustituyendo la X.Y.Z por la versión deseada, en este caso
+
+```shell
+sudo wget https://github.com/netbox-community/netbox/archive/refs/tags/v3.5.6.tar.gz
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/919dbea4-f38a-4d2a-a5bb-b3a563203fa8)</kbd>
+
+Descomprimimos el fichero en la carpeta /opt con el comando siguiente. La opeción general sería:
+
+```shell
+sudo tar -xzf vX.Y.Z.tar.gz -C /opt
+```
+
+Y en nuestro caso, sustituyendo la X.Y.Z por la versión deseada, sería con este comando:
+
+```shell
+sudo tar -xzf v3.5.6.tar.gz -C /opt
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/6d2f0a4b-6948-452b-8348-8dc9ca18d5e7)</kbd>
+
+El contenido del fichero comprimido se ha descomprimido en /opt y se ha creado la carpeta/opt/netbox-3.5.6. Podemos acceder a esta carpeta con el comando:
+
+```shell
+cd /opt/netbox-3.5.6
+```
+
+y ver el contenido con 'ls':
+
+```shell
+ls
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/e8728ad9-1422-44ac-8e36-4391f1c0d6df)</kbd>
 
 
