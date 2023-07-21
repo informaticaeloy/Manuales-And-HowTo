@@ -313,7 +313,7 @@ Este parámetro contiene los detalles de configuración de la base de datos. Hay
 DATABASE = {
     'NAME': 'netbox',               # Database name
     'USER': 'netbox',               # PostgreSQL username
-    'PASSWORD': 'J5brHrAXFLQSif0K', # PostgreSQL password
+    'PASSWORD': 'passnetbox',       # PostgreSQL password
     'HOST': 'localhost',            # Database server
     'PORT': '',                     # Database port (leave blank for default)
     'CONN_MAX_AGE': 300,            # Max database connection age (seconds)
@@ -322,4 +322,46 @@ DATABASE = {
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/0d105ba3-c60d-4ca9-9f07-0806e41176bd)</kbd>
 
+##### REDIS
 
+En este apartado podemos configurar los datos de REDIS: REDIS necesita 2 BD, llamadas 'tasks' y 'caching' con un identificador distinto para cada una de ellas. Con la configuración por defecto debería funciona:
+
+```
+REDIS = {
+    'tasks': {
+        'HOST': 'localhost',
+        'PORT': 6379,
+        'USERNAME': '',
+        'PASSWORD': '',
+        'DATABASE': 0,
+        'SSL': False,
+    },
+    'caching': {
+        'HOST': 'localhost',
+        'PORT': 6379,
+        'USERNAME': '',
+        'PASSWORD': '',
+        'DATABASE': 1,
+        'SSL': False,
+    }
+}
+```
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/e86aa81a-938d-428e-9b20-7df3649e1e56)</kbd>
+
+##### SECRET KEY
+
+A este parámetro se le debe asignar una clave generada aleatoriamente que se emplea como salt hashing y las funciones criptográficas relacionadas (Salt Hashing es agregar datos aleatorios a la entrada de una función para garantizar una salida única, el hash, incluso cuando las entradas son las mismas. En la protección por contraseña, salt es una cadena de datos aleatoria que se utiliza para modificar un hash de contraseña).
+
+Hay que tener en cuenta que nunca se usa esta secret-key directamente en el cifrado de datos secretos. Esta clave debe ser única para esta instalación y se recomienda que tenga al menos 50 caracteres. No debe compartirse fuera del sistema local.
+
+En el directorio principal se proporciona una secuencia de comandos de Python simple llamada generate_secret_key.py para ayudar a generar una clave adecuada, que usaremos de la siguiente forma:
+
+```shell
+sudo python3 /opt/netbox/netbox/generate_secret_key.py
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/fe5b188a-6041-4529-85ac-cfbcedac12dc)</kbd>
+
+Y luego la pegaremos en el fichero que estábamos modificando, configuration.py , en el la entrada de SECRET_KEY = '':
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/10d95a53-3dce-496c-b9f0-2dd7c66a0074)</kbd>
