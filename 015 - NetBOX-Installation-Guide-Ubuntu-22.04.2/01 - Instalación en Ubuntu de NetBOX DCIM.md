@@ -462,3 +462,35 @@ Y ya por fin estaremos en la página principal logueados como superadmins:
 Ahora, desde la terminal, podremos cerrar el proceso con 'CTRL+C' para continuar con las configuraciones posteriores.
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/b1711f09-a224-47ff-8e5c-2dd34b635c66)<kbd>
+
+:bomb: :warning: Tal vez sea un bune momento para hacer un **SNAPSHOT** de la máquina virtual :skull: :eyes:
+
+#### 1.4 GUNICORN
+
+Como la mayoría de las aplicaciones de Django, NetBox se ejecuta como una aplicación WSGI detrás de un servidor HTTP. Ahora vamos a instalar y configurar gunicorn (que se instala automáticamente con NetBox) para esta función; sin embargo, hay otros servidores WSGI disponibles y deberían funcionar de manera similar. uWSGI es una alternativa popular.
+
+Dentro del fichero de las releases de NetBox se envía un archivo de configuración predeterminado para gunicorn. Para usarlo, copiaremos '/opt/netbox/contrib/gunicorn.py' en '/opt/netbox/gunicorn.py'. (Hacemos una copia de este archivo en lugar de que sea el nombre definitivo para garantizar que cualquier cambio local no se sobrescriba con una actualización futura).
+
+```shell
+sudo cp /opt/netbox/contrib/gunicorn.py /opt/netbox/gunicorn.py
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/df762de9-1f97-4bb8-8483-cb48d2e4b6d1)</kbd>
+
+La configuración proporcionada por defecto en este fichero debería ser suficiente para la mayoría de las instalaciones iniciales pero es posible que se desee editar este archivo para cambiar la dirección IP y/o el número de puerto enlazados, o para realizar ajustes relacionados con el rendimiento. Consulta la documentación de Gunicorn para conocer los parámetros de configuración disponibles si lo deseas. La URL de la documentación de GUNICORN es esta: https://docs.gunicorn.org/en/stable/configure.html
+
+Ahora configuraremos systemd para controlar tanto gunicorn como el proceso de trabajo en segundo plano de NetBox. Primero, copiaremos '/opt/netbox/contrib/netbox.service' y '/opt/netbox/contrib/netbox-rq.service/ en el directorio '/etc/systemd/system/' y vuelvemos a cargar el demonio systemd:
+
+```shell
+sudo cp -v /opt/netbox/contrib/*.service /etc/systemd/system/
+```
+
+```shell
+sudo systemctl daemon-reload
+````
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/806677d1-02e4-4987-a418-28b9bfdc4c86)</kbd>
+
+Ahora, iniciaremos los servicios netbox y netbox-rq y los habilitaremos para que se inicien en el arranque del sistema:
+
+
