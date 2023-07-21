@@ -447,3 +447,18 @@ python3 manage.py runserver 0.0.0.0:8000 --insecure
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/13a94aa8-9b4b-4134-bcf0-84b7d5d6fe2c)</kbd>
 
+Podremos acceder a la url http://127.0.0.1:8000 desde el mismo equipo y veremos el panel de control general, y el botón de login en la parte superior derecha:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/a23485dd-ea5e-43b6-af12-199648f6ef0a)</kbd>
+
+Y nos loguearemos con el superusuario y su contraseña que hemos definido en pasos anteriores:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/ce167070-b6e9-462d-93a3-c74df8c53ff4)</kbd>
+
+Y ya por fin estaremos en la página principal logueados como superadmins:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/65a579c6-08ed-4337-b68c-5d86d789af73)</kbd>
+
+Ahora, desde la terminal, podremos cerrar el proceso con 'CTRL+C' para continuar con las configuraciones posteriores.
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/b1711f09-a224-47ff-8e5c-2dd34b635c66)<kbd>
