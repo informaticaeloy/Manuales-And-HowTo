@@ -225,4 +225,58 @@ ls
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/e8728ad9-1422-44ac-8e36-4391f1c0d6df)</kbd>
 
+La idea es dejar esta carpeta tal y como está, con su nombre incluyendo el nº de versión de NetBOX, y crear un symlink que apunte a ella en /opt/netbox . Lo hacemos con el siguiente comando general:
+
+```shell
+sudo ln -s /opt/netbox-X.Y.Z/ /opt/netbox
+```
+
+En nuestro caso para la versión c3.5.6 sería este:
+
+```shell
+sudo ln -s /opt/netbox-3.5.6/ /opt/netbox
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/425e9ed8-b074-4673-b33f-3f1afce1f45b)</kbd>
+
+De esta forma, podemos tener otras versiones instaladas en paralelo y cuando queramos actualizar, simplemente tendremos que actualizar el symlink a /opt . Para ver la configuración de este symlink, haremos lo siguiente:
+
+```shell
+ls -l /opt | grep netbox
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/9fa146e5-5145-4ca4-adde-63253bcf556a)<kbd>
+
+Ahora crearemos una cuenta de usuario del sistema llamada 'netbox'. Configuraremos los servicios WSGI y HTTP para que se ejecuten en esta cuenta. También asignaremos a este usuario la propiedad del directorio multimedia. Esto asegura que NetBox podrá guardar los archivos cargados. Lo haremos con los comandos siguientes:
+
+```shell
+sudo adduser --system --group netbox
+```
+
+```shell
+sudo chown --recursive netbox /opt/netbox/netbox/media/
+```
+
+```shell
+sudo chown --recursive netbox /opt/netbox/netbox/reports/
+```
+
+```shell
+sudo chown --recursive netbox /opt/netbox/netbox/scripts/
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/071507be-8596-41cc-9b22-200e0941bf98)</kbd>
+
+Ahora configuraremos NetBOX. Para ello, iremos al directorio de configuración de NetBox (/opt/netbox/netbox/netbox) y haremos una copia del fichero 'configuration_example.py' en 'configuration.py'. Este archivo contendrá todos los parámetros de configuración locales.
+
+```shell
+cd /opt/netbox/netbox/netbox
+```
+
+```shell
+sudo cp configuration_example.py configuration.py
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/81cbe49f-b46b-4791-b5b2-65f8b5ae9afc)</kbd>
+
 
