@@ -376,7 +376,7 @@ Una vez que se haya configurado NetBox, estamos listos para continuar con la ins
 + Construir la documentación localmente (para uso fuera de línea)
 + Agregar archivos de recursos estáticos en el disco
 
-:bomb: :warning: Tal vez sea un bune momento para hacer un **SNAPSHOT** de la máquina virtual :skull: :eyes:
+:bomb: :warning: Tal vez sea un buen momento para hacer un **SNAPSHOT** de la máquina virtual :skull: :eyes:
 
 Para hacer el upgrade, ejecutaremos el script 'upgrade.sh' ubicado en la carpeta '/opt/netbox' con el iguiente comando:
 
@@ -463,7 +463,7 @@ Ahora, desde la terminal, podremos cerrar el proceso con 'CTRL+C' para continuar
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/b1711f09-a224-47ff-8e5c-2dd34b635c66)</kbd>
 
-:bomb: :warning: Tal vez sea un bune momento para hacer un **SNAPSHOT** de la máquina virtual :skull: :eyes:
+:bomb: :warning: Tal vez sea un buen momento para hacer un **SNAPSHOT** de la máquina virtual :skull: :eyes:
 
 #### 1.4 GUNICORN
 
@@ -493,4 +493,27 @@ sudo systemctl daemon-reload
 
 Ahora, iniciaremos los servicios netbox y netbox-rq y los habilitaremos para que se inicien en el arranque del sistema:
 
+```shell
+sudo systemctl start netbox netbox-rq
+```
+
+```shell
+sudo systemctl enable netbox netbox-rq
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/ebcfcd6e-9cde-45f6-a5e5-f109b189e398)</kbd>
+
+Podemos usar el comando siguiente para comprobar si está funcionando:
+
+```shell
+systemctl status netbox
+```
+
+Y si está funcionando debería poder ver algo similar a esto:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/61b5c0bc-3ae6-42d6-82af-7d5ecdd94e1a)</kbd>
+
+Si el servicio no da el mensaje 'active (running)', podemos ejecutar otro comando para buscar mensajes en el registro para intentar identificar el problema:
+
+journalctl -eu netbox 
 
