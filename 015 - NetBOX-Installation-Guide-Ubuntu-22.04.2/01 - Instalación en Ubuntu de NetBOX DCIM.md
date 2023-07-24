@@ -16,6 +16,12 @@ NetBOX Installation Guide Ubuntu 22.04 Desktop
 
 ### 0.666 CONCLUSIONES FINALES
 
+Puedes seguir el asistente tal y como pongo en las líneas de más abajo, pero me encontré un error del que no conseguí salir:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/5d4b9011-f509-4e17-9132-b6a4b3d90ca2)</kbd>
+
+La instalación la hice con Apache, siguiendo el manual, pero todas las soluciones que encontré fueron para Nginx, por lo que lo dejo aquí y pruebo a reinstalar todo con Nginx.
+
 ### 0. REQUISITOS INICIALES
 Partimos de un Ubuntu Desktop 22.04 instalado como máquina virtual en un VMWare con 2cores, 4 GB de RAM y 20GB de disco duro, red tipo NAT con acceso a internet
 
