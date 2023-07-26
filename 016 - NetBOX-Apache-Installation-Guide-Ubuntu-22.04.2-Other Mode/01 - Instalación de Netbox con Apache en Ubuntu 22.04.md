@@ -71,12 +71,89 @@ sudo chown --recursive netbox /opt/netbox/netbox/media/
 6. Configure and install NetBox service
 
 cd /opt/netbox/netbox/netbox/
+
 sudo cp configuration_example.py configuration.py
 
 We need our focus into 4 part here.
+
 ALLOWED_HOSTS -> we have to put the server hostname or IP; we will use hostname, as we are hosting multiple HTTP service in a single host.
+
 DATABASE      -> fillup the database name, password
+
 REDIS default -> configuration is enough here for the LAB
+
 SECRET_KEY    -> generated in another command terminal
 
+sudo nano configuration.py
+
 ![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/2adc24b6-d3db-4124-95ab-3024c14ff373)
+
+python3 /opt/netbox/netbox/generate_secret_key.py
+
+![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/8ec7d7e4-8576-45f1-9b35-f389faf4853e)
+
+CTRL+X
+
+Yes
+
+Now its time to make the run. We will execute the upgrade.sh script. That is going to do few task for us. 
+
++ It will create a Python virtual environment 
+
++ All the required Python packages/modules will be installed
+
++ Database schema will be migrated
+
+sudo /opt/netbox/upgrade.sh
+
+![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/ec632f96-0412-42ac-a0b0-1a4bb4f5c899)
+
+![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/4b4d5fb0-86f6-4f00-b0a6-408cdbb166ff)
+
+It will take few minutes to complete the task.
+
+As NetBox doesnt create its user, we have to do it manually. Enter the python environment and use apnic as the user and training as the password.
+
+Type password two times to confirm
+
+source /opt/netbox/venv/bin/activate
+
+cd /opt/netbox/netbox
+
+python3 manage.py createsuperuser
+
+![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/7defc385-df2a-4666-9d08-b6c545521ad3)
+
+7. Setup the middleware - Gunicorn
+
+For NetBox gunicorn is automatically installed with Django. Next, we are going to setup the service. We will keep the default settings for the LAB.
+
+sudo cp /opt/netbox/contrib/gunicorn.py /opt/netbox/gunicorn.py
+
+![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/b41312ba-8487-4199-adb2-18a66bc1d220)
+
+8. Startup configuration for NetBox
+
+Copy the systemd files to the respective directory.
+
+sudo cp -v /opt/netbox/contrib/*.service /etc/systemd/system/
+
+sudo systemctl daemon-reload
+
+Restart and check the NetBox services.
+
+sudo systemctl start netbox
+
+sudo systemctl start netbox-rq
+
+sudo systemctl enable netbox
+
+sudo systemctl enable netbox-rq
+
+sudo systemctl status netbox netbox-rq
+
+![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/15a4ac5b-0ba8-4b41-a5a7-fcd55ed4db32)
+
+
+
+
