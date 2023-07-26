@@ -154,6 +154,56 @@ sudo systemctl status netbox netbox-rq
 
 ![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/15a4ac5b-0ba8-4b41-a5a7-fcd55ed4db32)
 
+9. Configure the HTTP service
+
+sudo apt install -y apache2
+
+![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/d16fa115-81af-434c-97d2-951c5fff800b)
+
+![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/9b38c500-54bc-453b-9b21-751ecd5ca629)
+
+To avoid the complexity we will use the default configuration file. But make sure you modify the ServerName portion, and put # before the SSL configuration lines and change the default port from 443 to 80 , as we are not using HTTPS in this LAB.
+
+sudo cp /opt/netbox/contrib/apache.conf /etc/apache2/sites-available/netbox.conf
+
+sudo nano /etc/apache2/sites-available/netbox.conf
+
+Este sería el código completo del fichero:
+
+<VirtualHost *:80>
+        ProxyPreserveHost On
+        ServerName localhost
+
+        # SSLEngine on
+        # SSLCertificateFile /etc/ssl/certs/netbox.crt
+        # SSLCertificateKeyFile /etc/ssl/private/netbox.key
+
+        Alias /static /opt/netbox/netbox/static
+
+        <Directory /opt/netbox/netbox/static>
+                Options Indexes FollowSymLinks MultiViews
+                AllowOverride None
+                Require all granted
+        </Directory>
+
+        <Location /static>
+                ProxyPass !
+        </Location>
+
+        RequestHeader set "X-Forwarded-Proto" expr=%{REQUEST_SCHEME}
+        ProxyPass / http://127.0.0.1:8001/
+        ProxyPassReverse / http://127.0.0.1:8001/
+ </VirtualHost>
+ 
+![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/764cdab8-c057-4444-9b8b-faede9f9226b)
+
+Enable the netbox site, and restart the apache service.
+$ sudo a2enmod ssl proxy proxy_http headers
+$ sudo a2ensite netbox
+$ sudo systemctl restart apache2
+
+![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/92be2b8b-a17c-4732-982c-6fdb2dafa1cb)
+
 
 
 
