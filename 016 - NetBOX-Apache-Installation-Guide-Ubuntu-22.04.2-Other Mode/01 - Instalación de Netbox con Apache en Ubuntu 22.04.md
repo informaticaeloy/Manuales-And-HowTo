@@ -204,6 +204,11 @@ $ sudo systemctl restart apache2
 
 ![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/92be2b8b-a17c-4732-982c-6fdb2dafa1cb)
 
+Ahora, vamos al navegador y accedemos a 'localhost. Obtendremos algo similar a esto:
+
+![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/a2f71c1c-ff4d-4613-b1d0-d2245bff0c50)
+
+
 
 
 
