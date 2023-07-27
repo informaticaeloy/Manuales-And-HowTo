@@ -81,7 +81,14 @@ Hacemos un 'migrate' de la BD con los campos nuevos que usará el plugin:
 python3 /opt/netbox/netbox/manage.py migrate
 ```
 
-<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/018d4907-1fa6-4db5-9c0d-090c79a76428)<kbd>
+Y un 'collectstatic' para importar ciertos ficheros necesarios a su ruta:
+
+```shell
+python3 /opt/netbox/netbox/manage.py collectstatic --no-input
+```
+
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/0fa591a9-410b-44d9-9c2e-a8730d8bf97e)</kbd>
 
 Y ya podremos ver algo similar a esto en nuestro navegador:
 
