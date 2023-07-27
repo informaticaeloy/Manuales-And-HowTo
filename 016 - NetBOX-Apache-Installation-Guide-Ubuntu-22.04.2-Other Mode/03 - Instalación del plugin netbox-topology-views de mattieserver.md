@@ -94,8 +94,4 @@ Y ya podremos ver algo similar a esto en nuestro navegador:
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/d65cbdfa-1cfd-443f-b37f-09d28aabcaf9)</kbd>
 
-Si obtenemos un error similar a este al entrar en 'Topology Views' -> 'Images', tendremos que crear la carpeta que hemos definido signar permisos a las nuevas carpetas:
-
-<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/49e7e532-1f4e-4af0-83f9-fe227b3ec860)</kbd>
-
 
