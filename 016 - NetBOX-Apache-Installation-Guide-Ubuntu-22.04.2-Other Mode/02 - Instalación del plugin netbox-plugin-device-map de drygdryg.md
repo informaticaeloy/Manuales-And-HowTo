@@ -23,18 +23,14 @@ echo netbox-plugin-device-map | sudo tee -a /opt/netbox/local_requirements.txt
 ```
 
 ```shell
-sudo pip3 install -U -r /opt/netbox/local_requirements.txt
+pip3 install -U -r /opt/netbox/local_requirements.txt
 ```
 
 ##### Hacemos un 'Collect' de los ficheros estáticos
 
-*IMPORTANTE:* no hacerlo con sudo
-
 ```shell
 python3 /opt/netbox/netbox/manage.py collectstatic
 ```
-
-<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/0f096327-d2cb-4511-a3da-111c15d5402f)</kbd>
 
 Para activar el plugin, añadimos el nombre del plugin a la lista 'PLUGINS'del fichero 'configuration.py' (que suele estar en '/opt/netbox/netbox/netbox/'):
 
@@ -55,3 +51,12 @@ Reiniciamos el servicio NetBox WSGI para aplicar los cambios:
 ```shell
 sudo systemctl restart netbox
 ```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/b17c860e-edee-47af-82e0-09513aa74d47)</kbd>
+
+Y ya podremos ver algo similar a esto en nuestro navegador:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/d38b4829-f815-4513-9da4-641d23f0e539)</kbd>
+
+
+
