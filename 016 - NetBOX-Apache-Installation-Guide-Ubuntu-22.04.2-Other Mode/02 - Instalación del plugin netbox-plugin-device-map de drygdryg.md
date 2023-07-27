@@ -1,5 +1,11 @@
 ### INSTALACIÓN DE PLUGINS
 
+Para hacer una instalación de plugin necesitamos estar como 'root'. No vale con ejecutar los comandos con 'sudo', por lo que lo primero que haremos será cambiarnos a 'root':
+
+```shell
+sudo su
+```
+
 Si tu instalación de NetBox use entronos virtuales, actívalo de esta forma:
 
 ```shell
@@ -25,7 +31,7 @@ sudo pip3 install -U -r /opt/netbox/local_requirements.txt
 *IMPORTANTE:* no hacerlo con sudo
 
 ```shell
- python3 /opt/netbox/netbox/manage.py collectstatic
+python3 /opt/netbox/netbox/manage.py collectstatic
 ```
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/0f096327-d2cb-4511-a3da-111c15d5402f)</kbd>
