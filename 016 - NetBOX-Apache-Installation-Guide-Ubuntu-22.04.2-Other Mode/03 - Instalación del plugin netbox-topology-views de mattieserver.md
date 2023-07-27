@@ -75,11 +75,19 @@ sudo systemctl restart netbox
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/b17c860e-edee-47af-82e0-09513aa74d47)</kbd>
 
+Hacemos un 'migrate' de la BD con los campos nuevos que usará el plugin:
+
+```shell
+python3 /opt/netbox/netbox/manage.py migrate
+```
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/018d4907-1fa6-4db5-9c0d-090c79a76428)<kbd>
+
 Y ya podremos ver algo similar a esto en nuestro navegador:
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/d65cbdfa-1cfd-443f-b37f-09d28aabcaf9)</kbd>
 
-Si obtenemos un error similar a este al entrar en 'Topology Views' -> 'Images', tendremos que signar permisos a las nuevas carpetas:
+Si obtenemos un error similar a este al entrar en 'Topology Views' -> 'Images', tendremos que crear la carpeta que hemos definido signar permisos a las nuevas carpetas:
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/49e7e532-1f4e-4af0-83f9-fe227b3ec860)</kbd>
 
