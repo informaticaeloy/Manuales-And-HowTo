@@ -1,14 +1,16 @@
-Steps
+### INSTALACIÓN DE PLUGINS
 
-If your NetBox installation uses virtualenv, activate it like this:
+Si tu instalación de NetBox use entronos virtuales, actívalo de esta forma:
 
+```shell
 source /opt/netbox/venv/bin/activate
+```
 
-Install the plugin.
+#### 1. Instalar el plugin
 
-To ensure plugin is automatically re-installed during future NetBox upgrades, create a file named local_requirements.txt (if not already existing) in the NetBox root directory and list the nextbox-plugin-device-map package:
+Para asegurar que el plugin se reinstala automáticamente cada vez que se hace un upgrade de NetBox, crea un fichero llamado 'local_requirements.txt' (si todavía no existe) en el directorio raiz de NetBox y añade el paquete nextbox-plugin-device-map:
 
-Option A: if you want to install it from PyPI:
+##### Opción A: if you want to install it from PyPI:
 
 echo netbox-plugin-device-map | sudo tee -a /opt/netbox/local_requirements.txt
 
