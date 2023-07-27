@@ -42,8 +42,10 @@ PLUGINS = [
 ]
 ```
 
-![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/a284eb01-7721-420c-bddd-4275e29cead3)
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/a284eb01-7721-420c-bddd-4275e29cead3)</kbd>
 
-Restart NetBox WSGI service to apply changes:
+Reiniciamos el servicio NetBox WSGI para aplicar los cambios:
 
+```shell
 sudo systemctl restart netbox
+```
