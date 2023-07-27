@@ -61,7 +61,7 @@ PLUGINS = [
 ]
 ```
 
-<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/a284eb01-7721-420c-bddd-4275e29cead3)</kbd>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/8c75dc7e-f625-4b27-b7cd-a6f35583875c)</kbd>
 
 Y la configuración del plugin la haremos bajo el apartado 'PLUGINS_CONFIG':
 
