@@ -28,13 +28,19 @@ sudo pip3 install -U -r /opt/netbox/local_requirements.txt
  python3 /opt/netbox/netbox/manage.py collectstatic
 ```
 
-![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/d2e92de4-bf65-42cf-8509-a211e2ed3754)
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/0f096327-d2cb-4511-a3da-111c15d5402f)</kbd>
 
-To enable plugin, add the plugin's name to the PLUGINS list in configuration.py (it's usually located in /opt/netbox/netbox/netbox/) like so:
+Para activar el plugin, añadimos el nombre del plugin a la lista 'PLUGINS'del fichero 'configuration.py' (que suele estar en '/opt/netbox/netbox/netbox/'):
 
+```shell
+sudo nano /opt/netbox/netbox/netbox/configuration.py
+```
+
+```shell
 PLUGINS = [
-    'netbox_device_map'
+ 'netbox_device_map'
 ]
+```
 
 ![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/a284eb01-7721-420c-bddd-4275e29cead3)
 
