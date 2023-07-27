@@ -77,10 +77,10 @@ sudo systemctl restart netbox
 
 Y ya podremos ver algo similar a esto en nuestro navegador:
 
-<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/a01c5ddb-51ab-46d8-a60d-49e541168b00)</kbd>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/d65cbdfa-1cfd-443f-b37f-09d28aabcaf9)</kbd>
 
 Si obtenemos un error similar a este al entrar en 'Topology Views' -> 'Images', tendremos que signar permisos a las nuevas carpetas:
 
-![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/49e7e532-1f4e-4af0-83f9-fe227b3ec860)
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/49e7e532-1f4e-4af0-83f9-fe227b3ec860)</kbd>
 
 
