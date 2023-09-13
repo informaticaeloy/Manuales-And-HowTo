@@ -33,33 +33,33 @@ attrib -p +u /s
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/d5ccc5b5-eed5-4ed3-a547-b2c02e933424)</kbd>
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/3551e030-c144-4574-8c12-c78367fb175a)</kbd>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/3551e030-c144-4574-8c12-c78367fb175a)</kbd>
 
 10. Ahora, si hacemos doble click en cualquier fichero, procede a descargarlo y luego lo abre con el programa asociado. Posteriormente vuelve a quedar en modo ‘local + cloud’
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/6bd3e571-f522-4ea2-aa19-7d7382be94d6)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/6bd3e571-f522-4ea2-aa19-7d7382be94d6)</kbd>
 
 11. Podríamos guardar este comando en un fichero CMD y ejecutarlo cada 5 minutos con una tarea programada:
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/f7eb5866-ebed-481d-9dc1-2c942e7c4597)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/f7eb5866-ebed-481d-9dc1-2c942e7c4597)</kbd>
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/3e0b3ead-4ee9-46a3-bb8e-f5a042224553)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/3e0b3ead-4ee9-46a3-bb8e-f5a042224553)</kbd>
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/5719907f-3903-45a8-a63b-d909f40f1024)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/5719907f-3903-45a8-a63b-d909f40f1024)</kbd>
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/dd11da61-ea04-4855-be26-78253373b3b2)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/dd11da61-ea04-4855-be26-78253373b3b2)</kbd>
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/b09b5253-f211-4f2c-9488-16ceda834971)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/b09b5253-f211-4f2c-9488-16ceda834971)</kbd>
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/bc5b9b2e-f8b5-40d1-bb8f-e6a48fe7dacb)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/bc5b9b2e-f8b5-40d1-bb8f-e6a48fe7dacb)</kbd>
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/87d2b4fa-10d9-43da-a8d7-eded60a05237)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/87d2b4fa-10d9-43da-a8d7-eded60a05237)</kbd>
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/866ecab0-4f3a-461b-85d1-d38b66508c89)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/866ecab0-4f3a-461b-85d1-d38b66508c89)</kbd>
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/ed126926-f675-483a-822d-7d12d992c001)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/ed126926-f675-483a-822d-7d12d992c001)</kbd>
 
-<kdb>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/712c032c-ea0b-4d6d-910b-79133e4095de)</kdb>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/712c032c-ea0b-4d6d-910b-79133e4095de)</kbd>
 
 12. 
 
