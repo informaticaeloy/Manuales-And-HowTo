@@ -61,10 +61,10 @@ attrib -p +u /s
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/712c032c-ea0b-4d6d-910b-79133e4095de)</kbd>
 
-12. 
+12. Y de esta forma podemos tener una carpeta local, almacenada en ONE DRIVE, y disponer de los datos bajo demanda, descargándolos de internet sólo cuando los necesitemos, sin ocuparnos espacio en disco local. Todo dependerá de la cuota de espacio que tengamos en ONE DRIVE. En este ejemplo, se ha usado una cuenta FREE de Microsoft (5GB) y se ha sincronizado con una partición local de 1GB para comprobar que funcionaba correctamente:
 
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/2f0f3a30-a5c8-40d1-ab24-880555971d90)</kbd>
 
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/30955107-6234-40f8-bfb2-fa626731cb16)</kbd>
 
-
-
-
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/cf51a7f8-a1d3-4b39-b116-96ce8c0eed03)</kbd>
