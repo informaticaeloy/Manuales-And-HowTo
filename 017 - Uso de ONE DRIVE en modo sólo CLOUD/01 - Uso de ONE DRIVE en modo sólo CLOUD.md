@@ -65,6 +65,6 @@ attrib -p +u /s
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/2f0f3a30-a5c8-40d1-ab24-880555971d90)</kbd>
 
-<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/30955107-6234-40f8-bfb2-fa626731cb16)</kbd>
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/a020093f-977a-479a-bf15-ab14c20b5007)</kbd>
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/cf51a7f8-a1d3-4b39-b116-96ce8c0eed03)</kbd>
