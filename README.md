@@ -12,3 +12,9 @@
 * 010 - ZABBIX-6.2-Install-Guide-Ubuntu-20.04
 * 011 - osTicket-Installation-Guide
 * 012 - Grafana Ubuntu 22.04 Azure LogINs Map
+* 013 - OCS Inventory Server - Ubuntu 22.04
+* 014 - openDCIM-Installation-GUIDE
+* 015 - NetBOX-Installation-Guide-Ubuntu-22.04.2
+* 016 - NetBOX-Apache-Installation-Guide-Ubuntu-22.04.2-Other Mode
+* 017 - Uso de ONE DRIVE para que sólo almacene datos en el CLOUD
+* ...
