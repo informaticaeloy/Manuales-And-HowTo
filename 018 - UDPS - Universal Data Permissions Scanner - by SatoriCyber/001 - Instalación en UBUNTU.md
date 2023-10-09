@@ -34,4 +34,15 @@ sudo pip install udsp
 
 ![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/7d420632-638b-4d5b-b114-e713cb337efa)
 
-Si nos da error 
+Si nos da error alguna de las dependencias, como por ejemplo esta:
+
+![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/11a9db83-00c9-4690-bcce-0c19dc793ff5)
+
+Podemos instalarlo manualmente:
+
+```shell
+pip install psycopg2-binary
+```
+
+![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/d51ec0d1-8bdf-4f6f-88ab-677d2cbc6230)
+
