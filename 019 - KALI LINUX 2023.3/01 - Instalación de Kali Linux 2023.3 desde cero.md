@@ -18,6 +18,43 @@ Una vez descargado, en VMWARE, VirtualBox, Hyper-V, ESXi, ... crearemos la máqu
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/36f34907-0f81-4a8a-b6c9-df20144e7165)</kbd>
 
+Seleccionamos como sistema de instalación la ISO descargada:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/30b7c440-5bc5-4546-bcc3-76482dccac91)</kbd>
+
+Le decimos que es un sistema operativo tipo Linux:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/823e707a-49ad-47dc-b91b-bde108ba3173)</kbd>
+
+Le asignamos un nombre a la máquina virtual y seleccionamos el lugar donde se guardarán sus ficheros:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/871d2157-4d79-4057-9333-fb75f5d45629)</kbd>
+
+Especificamos el nº de procesadores y cores, en este caso 2 procesadores y 1 core por procesador:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/45adcbdd-53ea-4058-9260-7d6e0e94cd54)</kbd>
+
+Le asignamos la memoria RAM deseada, en este caso nos recomienda 4GB:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/226390c4-499d-445f-9a5e-9372cb831f6f)</kbd>
+
+El adaptador de red, lo dejaremos como NAT, para que la IP de la máquina sea compartida con el anfitrión, en vez de comportarse como una IP más de la red general, que sería BRIDGE:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/5154e9a1-0de3-4f3b-a5e8-2da57ac64d87)</kbd>
+
+Los controladores I/O los dejamos como salen por defecto, en LSI Logic:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/ebf2cf4b-6d12-49d4-ab0e-87dd46081ceb)</kbd>
+
+Y el tipo de disco virtual también, lo dejamos en SCSI:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/ea983132-83c5-4903-bbef-2bd7793ff09f)</kbd>
+
+Creamos un disco virtual nuevo (podemos asignarle un disco virtual más tarde, pero lo hacemos ya):
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/9c1fe918-05b4-4734-a0c5-20e789a76926)</kbd>
+
+
 <kbd></kbd>
 ```shell
 attrib -p +u /s
