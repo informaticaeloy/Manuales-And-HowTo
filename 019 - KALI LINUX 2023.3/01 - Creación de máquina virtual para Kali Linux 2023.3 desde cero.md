@@ -70,5 +70,7 @@ Ya podemos arrancar nuestra máquina virtual. Para ello la seleccionamos y le da
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/4c15bb59-ff73-484c-a5ee-5b8c3e215d92)</kbd>
 
-Siguiente paso -> arranque e instalación de Kali Linux en este enlace https://github.com/informaticaeloy/Manuales-And-HowTo/blob/3ef1709ee6827ca17cf537af025b2dcb5eac9d41/019%20-%20KALI%20LINUX%202023.3/02%20-%20Instalaci%C3%B3n%20de%20Kali%20Linux.md
+Siguiente paso -> arranque e instalación de Kali Linux en este enlace 
+
+* https://github.com/informaticaeloy/Manuales-And-HowTo/blob/3ef1709ee6827ca17cf537af025b2dcb5eac9d41/019%20-%20KALI%20LINUX%202023.3/02%20-%20Instalaci%C3%B3n%20de%20Kali%20Linux.md
 
