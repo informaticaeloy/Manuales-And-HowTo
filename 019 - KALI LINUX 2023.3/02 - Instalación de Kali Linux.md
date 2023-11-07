@@ -60,11 +60,18 @@ Seleccionamos "Todos los ficheros en una sola partición":
 
 ![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/24f75573-d3fb-4716-8483-9a35a5fdddfb)
 
-
-
 Nos muestra una ventana con el resumen de todas las opciones seleccionadas del particionado y le damos a "Finalizar el particionado y escribir los cambios en el disco":
 
 ![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/649c7095-6b54-46cb-ac87-01f16498fa6d)
+
+Y finalmente nos pide una confirmación más. Cambiamos a "SI", si estamos seguros:
+
+![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/4e81e372-5c1d-411e-94d0-4112f87da786)
+
+Y ya, comeinza la instalación:
+
+![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/f72b5d3f-b21b-416b-b837-557831b469cc)
+
 
 
 <kbd></kbd>
