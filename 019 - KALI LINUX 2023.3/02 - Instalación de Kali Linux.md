@@ -62,7 +62,10 @@ Seleccionamos "Todos los ficheros en una sola partición":
 
 
 
-Nos muestra una ventana con el resumen de todas las opciones y le 
+Nos muestra una ventana con el resumen de todas las opciones seleccionadas del particionado y le damos a "Finalizar el particionado y escribir los cambios en el disco":
+
+![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/649c7095-6b54-46cb-ac87-01f16498fa6d)
+
 
 <kbd></kbd>
 ```shell
