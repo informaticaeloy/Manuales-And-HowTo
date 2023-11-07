@@ -106,5 +106,5 @@ Y ya tenemos nuestro KALI listo para trabajar:
 
 En el siguiente apartado recorreremos alguna mejoras y buenas prácticas a realizar sobre nuestro KALi antes de empezar a trabajar con él. Ver en el siguiente link:
 
-
+* [019 - KALI LINUX 2023.3/03 - Puesta en marcha, mejoras y buenas prácticas en KALI.md](https://github.com/informaticaeloy/Manuales-And-HowTo/blob/main/019%20-%20KALI%20LINUX%202023.3/03%20-%20Puesta%20en%20marcha%2C%20mejoras%20y%20buenas%20pr%C3%A1cticas%20en%20KALI.md)
 
