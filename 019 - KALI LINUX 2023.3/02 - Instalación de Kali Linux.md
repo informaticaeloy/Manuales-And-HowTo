@@ -76,12 +76,35 @@ En la siguiente ventana nos pregunta por los programas que queremos instalar. La
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/6050e7f7-cf30-45cb-aff8-5b3c180eca9b)</kbd>
 
-Comienza la descarga de programas del repositorio de Kali. Si diese error, comprueba si tu salida a internet es a través de un firewall o proxy que analiza las descargas, ya que la descarga de alguna de las aplicaciones puede ser bloquedada po estos:
+Comienza la descarga de programas del repositorio de Kali. Si diese error, comprueba si tu salida a internet es a través de un firewall o proxy que analiza las descargas, ya que la descarga de alguna de las aplicaciones puede ser bloquedada por estos:
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/b7f20c3f-7666-4366-89ab-71831ee8ad65)</kbd>
 
+Cuando termina, nos pregunta si instalar el cargador de arranzuqe GRUB. Esto es el menú para seleccionar el sistema operativo que queremos que arranque y varias opciones de inicio de este propio Kali. Le decimos que "SI". Si en el mismo disco tuviéramos otro sistema operativo, un windows por ejemplo, en este menú podríamos selccionar si arrancar con KALI o con WINDOWS:
 
-<kbd></kbd>
-```shell
-attrib -p +u /s
-```
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/5c7e50d2-84ae-48b3-ab38-36018a8bb302)</kbd>
+
+Seleccoinamos nuestro disco, en este caso /dev/sda:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/8354d3bf-7b84-4b0e-b888-6fd0aff79b30)</kbd>
+
+Durante todo el proceso, nos ha salido un banner en la parte inferior indicándonos que sería bueno instalar las VMware Tools para mejorar ciertas características. Al finalizar la instalación, el asistente las instala él mismo. Si nos diese algún problema, podríamos instalarlas a mano posteriormente:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/69cf65fa-b054-464f-886a-5f070f653c75)</kbd>
+
+Llegados a este punto, la instalación ha terminado y nos pide hacer click en "Continuar" para reiniciar el equipo:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/9c335670-1bff-4301-8748-29678810d98a)</kbd>
+
+La máquina ahora se reinicia, y después entra hasta la ventana de login de KALI. Escribimos los datos que hemos configurado anteriormente de usuario y contraseña:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/d31eb99a-16d4-49b3-8cd6-c8726ccfb2b8)</kbd>
+
+Y ya tenemos nuestro KALI listo para trabajar:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/853846ea-230d-422b-866d-4e84cc6a9a4e)</kbd>
+
+En el siguiente apartado recorreremos alguna mejoras y buenas prácticas a realizar sobre nuestro KALi antes de empezar a trabajar con él. Ver en el siguiente link:
+
+
+
