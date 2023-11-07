@@ -54,6 +54,11 @@ Creamos un disco virtual nuevo (podemos asignarle un disco virtual más tarde, p
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/9c1fe918-05b4-4734-a0c5-20e789a76926)</kbd>
 
+A este disco le asignamos 40GB. El asistente nos recomienda 20GB, pero se queda algo escaso si vamos a almacenar alguna captura de paquete con wireshark  o descargar algún programa extra. NO marcamos la opción de "Allocate all disk space now", para que cree dicho disco nuevo, con un tope de 40GB pero usando el espacio real que necesite. Es un disco dinámico, que, conforme vaya creaciendo irá usando más espacio en disco. De la otra forma, ya nos asignaría un espacio de 40GB fijos aunque no se necesiten. También le dajamos marcada la opción de "Split virtual disk into multiple files", para que en vez de crearnos un fichero grande con el disco duro virtual de la máquina, nos lo vaya partiendo en varios ficheros más pequeños, para que sea más manejable:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/3c13fb79-2d6b-4e6d-8fa7-0132bca2f544)</kbd>
+
+
 
 <kbd></kbd>
 ```shell
