@@ -58,9 +58,16 @@ A este disco le asignamos 40GB. El asistente nos recomienda 20GB, pero se queda 
 
 <kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/3c13fb79-2d6b-4e6d-8fa7-0132bca2f544)</kbd>
 
+Pdemos asignar un nombre para estos múltiple ficheros del disco duro virtual, pero lo dejamos por defecto:
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/db70ffef-843b-4dd6-9b3b-b1993599057c)</kbd>
+
+Al final del asistente nos sale un resumen con todas las opciones seleccionadas anteriormente. Hacemos click en "Finish":
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/5e9eb892-c514-405d-9362-11be630dd611)</kbd>
+
+Ya podemos arrancar nuestra máquina virtual. Para ello la seleccionamos y le damos a "Start Up Guest":
+
+<kbd>![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/4c15bb59-ff73-484c-a5ee-5b8c3e215d92)</kbd>
 
 
-<kbd></kbd>
-```shell
-attrib -p +u /s
-```
