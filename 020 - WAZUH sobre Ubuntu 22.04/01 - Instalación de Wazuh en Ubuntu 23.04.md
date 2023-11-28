@@ -16,5 +16,6 @@ sudo bash ./wazuh-install.sh -a
 
 ![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/b73c311d-9b01-407a-a5a5-5f686bbd6910)
 
+![image](https://github.com/informaticaeloy/Manuales-And-HowTo/assets/20743678/825e39b8-d2be-4a89-874b-082b93c2cd5e)
 
 
